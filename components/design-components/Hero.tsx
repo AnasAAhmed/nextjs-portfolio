@@ -56,7 +56,7 @@ const Hero = () => {
             </span>Developer
           </h1>
           {/* <TextGenerateEffect duration={0.1} className="max-w-3xl mx-auto mb-6 text-sm md:text-xl lg:text-2xl  lg:mb-8" words="Revolutionize your content creation with our AI-Agents, delivering engaging and high-quality text in seconds."/> */}
-          <SplitText
+          {/* <SplitText
             text=" I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in Agentic AI and Web 3.0."
             mode="words"
@@ -65,9 +65,9 @@ const Hero = () => {
             delayPerItem={0.03}
             duration={0.3}
             y={14}
-          />
+          /> */}
           <br />
-          <p style={{ fontWeight: '300' }} className="sr-only max-w-4xl mx-auto mb-6 text-sm md:text-xl lg:text-2xl  lg:mb-8">
+          <p style={{ fontWeight: '300' }} className="sr-onsly max-w-4xl mx-auto mb-6 text-sm md:text-xl lg:text-2xl  lg:mb-8">
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in <strong>Agentic AI</strong> and Web&nbsp;3.0.
           </p>
