@@ -1,0 +1,81 @@
+import Section from '@/components/design-components/Section'
+import SearchControls from '@/components/Search'
+import { projects } from '@/lib/constants'
+import { ExternalLink } from 'lucide-react'
+import Link from 'next/link'
+import React from 'react'
+
+const page = async ({ searchParams }: { searchParams: Promise<{ category: string, query: string }> }) => {
+  const { category = '', query = '' } = await searchParams
+
+  const normalizedCategory = category.trim().toLowerCase()
+  const normalizedQuery = query.trim().toLowerCase()
+
+  const categories = Array.from(
+    new Set(projects.flatMap(p => p.category))
+  )
+
+
+  const filteredProjects = projects.filter(p => {
+    const matchesCategory = !normalizedCategory || p.category.toLowerCase().includes(normalizedCategory)
+    const matchesQuery = !normalizedQuery || p.title.toLowerCase().includes(normalizedQuery)
+    return matchesCategory && matchesQuery
+  })
+  return (
+    <Section crosses crossesOffset="lg:translate-y-[5.25rem]"
+    >
+      <SearchControls categories={Array.from(new Set(categories))} />
+      <div className="container pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center mt-10 space-y-10 text-center">
+        {filteredProjects.map((proj: any, index: number) => (
+          <div
+            key={index}
+            className="transition-transform duration-300 ease-in-out flex flex-col justify-center items-center"
+          >
+            <div
+              className={`relatsive hover:scale-105 hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
+            >
+              <img
+                src={proj.image}
+                alt={proj.title}
+                title={proj.description}
+                className="object-cover w-full h-full sm:w-[s400px] sm:sh-[200px] md:h-[30s0px] md:sw-[500px]"
+              />
+            </div>
+            <p
+              title={proj.title}
+              className="text-lg line-clamp-2 max-w-80 font-medium mt-4 mx-auto"
+            >
+              {proj.title}
+            </p>
+            <p
+              title={proj.description}
+              className="text-sm text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
+            >
+              {proj.description}
+            </p>
+            <Link
+              prefetch={false}
+              href={'/projects?category=' + proj.category}
+              title={proj.category}
+              className="text-sm rounded-2xl bg-secondary border px-2 text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
+            >
+              {proj.category.replace(/-/g, " ").replace(/\b\w/g, (char: string) => char.toUpperCase())}
+            </Link>
+            {
+              proj.url &&
+              <div className=' bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)] p-[0.1rem] rounded-md'>
+                <Link target="_blank" className=' bg-primary-foreground px-2 py-1 flex rounded-md items-center gap-2' href={proj.url} title={proj.title + " Live Demo"} >
+                  Live Demo <ExternalLink />
+                </Link>
+              </div>
+            }
+          </div>
+        ))
+        }
+
+      </div>
+    </Section >
+  )
+}
+
+export default page
