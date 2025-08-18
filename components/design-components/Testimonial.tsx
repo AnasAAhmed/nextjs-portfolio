@@ -10,13 +10,14 @@ const Testimonial = () => {
         >
             <div className="flex py-10 flex-col justify-center items-center">
 
-            <Heading
-                className="md:max-w-md mt-8 text-center lg:max-w-2xl"
-                title="Testimonial"
+                <Heading
+                    modeForSplit='chars'
+                    className="md:max-w-md mt-8 text-center lg:max-w-2xl"
+                    title="Testimonial"
                 />
-            <InfiniteMovingCards speed='normal' items={feedbacks.slice(0, 3)} />
-            <InfiniteMovingCards speed='normal' direction='right' items={feedbacks.slice(4, 8)} />
-                </div>
+                <InfiniteMovingCards speed='normal' items={feedbacks.slice(0, 3)} />
+                <InfiniteMovingCards speed='normal' direction='right' items={feedbacks.slice(4, 8)} />
+            </div>
         </Section>
     )
 }

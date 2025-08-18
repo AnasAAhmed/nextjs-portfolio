@@ -1,11 +1,14 @@
 'use client'
+import SplitText from "../ui/split-text";
 import TagLine from "./Tagline";
 import { motion } from "framer-motion";
 
-const Heading = ({ hPosition = 'center', className, title, text, tag }: { hPosition?: 'end' | 'center' | 'start'; className?: string, title: string, text?: string, tag?: string }) => {
+const Heading = (
+  { hPosition = 'center', modeForSplit = 'words', className, title, text, tag }:
+    { hPosition?: 'end' | 'center' | 'start'; modeForSplit?: 'words' | 'chars'; className?: string, title: string, text?: string, tag?: string }) => {
   return (
     <motion.div
-      className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 md:tesxt-center`}
+      className={`${className} max-w-[50rem] mx-auto mb-8 lg:mb-16 md:tesxt-center`}
       // initial={{ opacity: 0, y: 30 }}
       // whileInView={{ opacity: 1, y: 0 }}
       style={{ textAlign: hPosition }}
@@ -24,15 +27,15 @@ const Heading = ({ hPosition = 'center', className, title, text, tag }: { hPosit
       )}
 
       {title && (
-        <motion.h2
-          className="text-3xl font-mono font-normal text-secondary-foreground md:text-4xl lg:text-5xl mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          {title}
-        </motion.h2>
+        <SplitText
+          text={title}
+          mode={modeForSplit}
+          className="text-3xl font-normal fonts-semibold md:text-4xl lg:text-5xl mb-6"
+          itemClassName="mx-[1px]"           // slight spacing
+          delayPerItem={0.03}
+          duration={0.3}
+          y={12}
+        />
       )}
 
       {text && (

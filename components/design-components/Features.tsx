@@ -6,7 +6,7 @@ import { WobbleCard } from "../ui/wobble-card";
 import SplitText from "../ui/split-text";
 
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
   const projects = [
     {
       title: feturedProjects[0].heading,
@@ -74,16 +74,18 @@ const FeaturedProjects = () => {
   ];
   return (
     <Section
-      crosses
+      crosses={crosses}
       customPaddings="py-2"
       id="features"
     >
       <Heading
-        className="pt-10 md:pt-5 xl:pt-0 text-center"
+        className="pt-10 md:pt-5 xl:pt-0 text-center "
         title="What i have learned by making these complex real-world apps"
         text="From eCommerce to AI tools and social platforms, each project sharpened my skills in performance, SEO, UX, and scalability."
       />
-      <div className="grid text-white/80 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <h1 className="sr-only">What i have learned by making these complex real-world apps</h1>
+
+      <div className="grid mb-10 md:mb-5 xl:mb-0 text-white/80 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <WobbleCard
           containerClassName="bg-pink-800 sm:col-span-2 lg:col-span-2 relative overflow-visible"
           className="relative flex flex-col justify-between h-full p-8"

@@ -29,24 +29,24 @@ const page = async ({ searchParams }: { searchParams: Promise<{ category: string
         {filteredProjects.map((proj: any, index: number) => (
           <div
             key={index}
-            className="transition-transform duration-300 ease-in-out flex flex-col justify-center items-center"
+            className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
           >
             <div
-              className={`relatsive hover:scale-105 hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
+              className={`relatsive hover:scale-105 w-full sm:h-[150px] md:h-[250px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
             >
               <img
                 src={proj.image}
                 alt={proj.title}
                 title={proj.description}
-                className="object-cover w-full h-full sm:w-[s400px] sm:sh-[200px] md:h-[30s0px] md:sw-[500px]"
+                className="object-cover w-full h-full"
               />
             </div>
-            <p
+            <h3
               title={proj.title}
-              className="text-lg line-clamp-2 max-w-80 font-medium mt-4 mx-auto"
+              className="text-lg line-clamp-1 max-w-80 font-medium mt-4 mx-auto"
             >
               {proj.title}
-            </p>
+            </h3>
             <p
               title={proj.description}
               className="text-sm text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
@@ -57,9 +57,9 @@ const page = async ({ searchParams }: { searchParams: Promise<{ category: string
               prefetch={false}
               href={'/projects?category=' + proj.category}
               title={proj.category}
-              className="text-sm rounded-2xl bg-secondary border px-2 text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
+              className="text-sm uppercase rounded-2xl bg-secondary border px-2 text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
             >
-              {proj.category.replace(/-/g, " ").replace(/\b\w/g, (char: string) => char.toUpperCase())}
+              {proj.category.replace(/-/g, " ")}
             </Link>
             {
               proj.url &&

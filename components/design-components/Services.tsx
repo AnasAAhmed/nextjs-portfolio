@@ -17,10 +17,11 @@ const Benefits = () => {
       <div className="container max-sm:pb-12 pt-12 lg:pt-0 relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
+          modeForSplit='chars'
           title="Services"
         />
-
-        <div className="flex flex-wrap gap-5 mb-10">
+        <h1 className="sr-only">Services</h1>
+        <div className="flex flex-wrap gap-5 mb-1a0">
           {services.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
@@ -54,7 +55,7 @@ const Benefits = () => {
               {item.light && <GradientLight />}
 
               <div
-                className="absolute inset-0.5 bg-n-8"
+                className="absolute inset-0.5"
                 style={{ clipPath: "url(#benefits)" }}
               >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">

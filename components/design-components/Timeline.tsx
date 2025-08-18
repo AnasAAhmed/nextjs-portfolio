@@ -4,6 +4,7 @@ import { Timeline } from '../ui/timeline'
 import { Calendar, Award, BookOpen, Code, Server, Brain, Bot, Layers, LucideIcon } from "lucide-react";
 import EducationItem from './design/TimelineContent';
 import { GradientLight, GradientLightLeft } from './design/Benefits';
+import Heading from './Heading';
 
 
 const TimelineSection = () => {
@@ -133,6 +134,7 @@ const TimelineSection = () => {
   ];
   return (
     <Section crosses id='timeline'>
+      <h1 className="sr-only">Changelog from my journey</h1>
       <Timeline data={projects} />
     </Section>
   )

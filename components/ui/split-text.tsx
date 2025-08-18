@@ -1,11 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 
-type SplitMode = "words" | "chars";
 
 interface SplitTextProps {
   text: string;
-  mode?: SplitMode;          // "words" | "chars"
+  mode?:  "words" | "chars";          // "words" | "chars"
   className?: string;        // wrapper styles
   itemClassName?: string;    // each word/char styles
   once?: boolean;            // animate only once

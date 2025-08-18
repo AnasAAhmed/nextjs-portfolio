@@ -21,7 +21,7 @@ type ProjectType = {
     category: string;
 }[]
 
-const Projects = ({ data }: { data: ProjectType }) => {
+const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectType }) => {
     // const [currentIndex, setCurrentIndex] = useState(0);
 
     // const handleNext = () => {
@@ -34,13 +34,15 @@ const Projects = ({ data }: { data: ProjectType }) => {
 
     return (
         <Section
-            crosses
+            crosses={crosses}
             crossesOffset="lg:translate-y-[5.25rem]"
             id="projects"
         >
             <div className="container flex flex-col justify-center items-center max-lg:pb-8 pt-10 space-y-10 text-center">
+                <h1 className="sr-only">Projects</h1>
 
                 <Heading
+                    modeForSplit='chars'
                     title="Projects"
                 // text="Brainwave unlocks the potential of AI-powered applications"
                 />

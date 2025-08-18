@@ -49,6 +49,7 @@ const Header = () => {
               <Link
                 prefetch={false}
                 key={item.id}
+                title={item.title}
                 href={item.url}
                 onClick={handleClick}
                 className={`block relative text-2xl uppercase text-n-1 transition-colors ${item.onlyMobile ? "md:hidden" : ""

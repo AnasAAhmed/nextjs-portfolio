@@ -5,7 +5,6 @@ import Hero from "../components/design-components/Hero";
 import Services from "../components/design-components/Services";
 import Projects from "@/components/design-components/Projects";
 import Posts from "@/components/design-components/Posts";
-import Testimonial from "@/components/design-components/Testimonial";
 import TimelineSection from "@/components/design-components/Timeline";
 import { posts, projects } from "@/lib/constants";
 
@@ -49,7 +48,6 @@ export default async function Home() {
       <TimelineSection />
       <FeaturedProjects />
       <Posts data2={posts}/>
-      <Testimonial />
     </>
   );
 }

@@ -11,7 +11,18 @@ export default function SearchControls({ categories }: { categories: string[] })
   const [category, setCategory] = useState(searchParams.get("category") || "");
   const [query, setQuery] = useState(searchParams.get("query") || "");
 
+
   const params = new URLSearchParams();
+  useEffect(() => {
+    const categoryFromUrl = searchParams.get("category")
+    if (categoryFromUrl && categoryFromUrl !== category) {
+      setCategory(categoryFromUrl!)
+    };
+    const queryFromUrl = searchParams.get("query")
+    if (queryFromUrl && queryFromUrl !== query) {
+      setQuery(queryFromUrl!)
+    };
+  }, [searchParams]);
   useEffect(() => {
     if (category) params.set("category", category);
     const handler = setTimeout(() => {
@@ -23,7 +34,7 @@ export default function SearchControls({ categories }: { categories: string[] })
       clearTimeout(handler);
     };
   }, [query, router]);
-  
+
   useEffect(() => {
     if (category) params.set("category", category);
     if (query) params.set("query", query);
