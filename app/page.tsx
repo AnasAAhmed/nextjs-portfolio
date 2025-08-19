@@ -44,7 +44,7 @@ export default async function Home() {
       <Hero />
       <Services />
       <Skills />
-      <Projects data={projects} />
+      <Projects data={projects.slice(0,4)} />
       <TimelineSection />
       <FeaturedProjects />
       <Posts data2={posts}/>

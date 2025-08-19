@@ -13,8 +13,8 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Education",
-    url: "/#timeline",
+    title: "Skills",
+    url: "/#skills",
     onlyMobile: false
   },
   {
@@ -24,17 +24,17 @@ export const navigation = [
     onlyMobile: false
   },
   {
-    id: "6",
-    title: "Contact",
-    url: "/#contact",
+    id: "4",
+    title: "Education",
+    url: "/#timeline",
     onlyMobile: false
   },
-  {
-    id: "7",
-    title: "Skills",
-    url: "/#skills",
-    onlyMobile: false
-  },
+  // {
+  //   id: "6",
+  //   title: "Contact",
+  //   url: "/#contact",
+  //   onlyMobile: false
+  // },
 ];
 
 export const heroIcons = ['/home-smile.svg', '/file-02.svg', '/search-md.svg', '/plus-square.svg'];
@@ -384,7 +384,7 @@ export const projects = [
   {
     "title": "Social Media App | Anas Ahmed",
     "description": "A full-stack social media made with Nextjs, Neon PostgreSQl, Typescript, Cloudinary, clerk, Prisma and SSR streaming logic",
-    "image": "/ff.png",
+    "image": "https://i.ytimg.com/vi/aBjge1drw0c/maxresdefault.jpg",
     "url": "https://anas-social.vercel.app",
     "category": "full-stack",
   },
@@ -400,19 +400,66 @@ export const projects = [
     "description": "A 3D portfolio featuring smooth animations, interactive elements, and an immersive user experience.",
     "image": "https://utfs.io/f/d78048ea-c332-419d-b619-a9155b4cd31a-palkka.png",
     "url": "https://anas3d.netlify.app",
-    "category": "ui/ux-3d",
+    "category": "frontend-3d",
   },
   {
     "title": "3D Personal Portfolio with Three.js, Reactjs",
     "description": "A stunning 3D replica of the Apple iPhone 15 Pro and Pro Max product page, featuring smooth animations, interactive elements, and an immersive user experience. Built for high performance and realism.",
     "image": "https://miro.medium.com/v2/resize:fit:1400/1*qbARfhNI-yZF9lmIVhcDFQ.png",
     "url": "https://apple3d-anas.netlify.app/",
-    "category": "ui/ux-3d",
+    "category": "frontend-3d",
+  },
+  {
+    "title": "8+ figma designes into Landing Pages in Reactjs/Nextjs",
+    "description": "I developed brainwave landing pages in Reactjs/Nextjs with fast routing, pixel-perfect & attractive design for good UX/UI. Some of pages i designed & developed by myself and rest i convert it from figma design to code.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/3dcfaa4b84d014016990c3ec50c24ce3-1753463955854/Copy%20of%20Your%20paragraph%20text.png",
+    "url": "https://brainwave-anas.vercel.app/",
+    "category": "frontend-ui/ux",
+  },
+  {
+    "title": "ImageWrite.ai, Image to text and chatbot in python",
+    "description": "ImageWrite AI is a smart web app that allows users to extract text from images using OCR (Optical Character Recognition) and then interact with that text using an AI-powered chatbot. Designed for students, researchers, and professionals, the tool makes it easy to digitize physical notes or documents and instantly generate summaries, explanations, or answers to related questions.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/f7a03500157b877cb25c539d0ea07e6f-1755611113088/streamlit-ai.png",
+    "url": "https://imagewrite-anas-giaic.streamlit.app",
+    "category": "python-with-ai",
+  },
+  {
+    "title": "iNotebook Save & secure your note on cloud",
+    "description": "Develope with mern stack iNotebook provides you cloud notebook to save your personal notes.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/2a5065afac802fd0f23eda1494627227-1755614720839/Screenshot%20(245).png",
+    "url": "https://inotebook-gh6p.vercel.app",
+    "category": "full-stack",
+  },
+  {
+    "title": "Figma Design To Code in 24hrs for hackathon",
+    "description": "Hackhaton (GIAIC) project Using Nextjs,Node.js, dynamic product page, SSR, ISR,SSG & CSR.",
+    "image": "https://s3-alpha.figma.com/hub/file/3191449246/22f98b38-ccd9-4dbf-80c1-41d6ee983dc0-cover.png",
+    "url": "https://figma-ecommerce-anas-giaic.vercel.app/",
+    "category": "frontend-ui/ux",
+  },
+  {
+    "title": "Figma Design To Code in 24hrs for hackathon",
+    "description": "This project is part of GIAIC hackathon Figma to Nextjs project in 24hrs we were given 5 pages figma design to convert it in 24 hrs with best practice this the the final project after implementing best rendering strategies of vercel CDN Caching dynamic products and thier SEO with mock Data Streaming rendering for long dynamic pages this is nit just the simple frontend project",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/55b44b309b24f66ad3949c66206b4cf6-1755615941475/24hrs-giaic.png",
+    "url": "https://figma-giaic-hackathon-anas.vercel.app/",
+    "category": "frontend-ui/ux",
+  },
+   {
+    "title": "Custom Complet eAuthentication System in Nextjs",
+    "description": "A complete authentication system using NextAuth v5, supporting credentials, Google, and GitHub login. Built with scalable SSR logic and raw PostgreSQL queries using the Neon driver for high-performance authentication.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/be5338d53a31373bb704fec8e059b999-1755620392939/auth.png",
+    "url": "https://next-auth-anas.vercel.app",
+    "category": "full-stack",
+  },
+  {
+    "title": "Imaginify - AI-powered image editing in Nextjs",
+    "description": "image-ai-toolkit: An advanced image editing app with AI-powered object removal, color modification, resolution enhancement, and image extension. Includes Cloudinary SDK for efficient image search and management. Built for seamless user experience.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/58cb5a18afaae92c5f06334617c32a5d-1755621301804/imagerator.png",
+    "url": "https://imagerator-ai.vercel.app",
+    "category": "full-stack-with-ai",
   },
 ]
-
-// https://utfs.io/f/d78048ea-c332-419d-b619-a9155b4cd31a-palkka.png
-// https://miro.medium.com/v2/resize:fit:1400/1*qbARfhNI-yZF9lmIVhcDFQ.png
+// https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/2a5065afac802fd0f23eda1494627227-1755614720839/Screenshot%20(245).png
 export const feedbacks = [{
   "quote": "Anas helped me debug a complex authentication issue in my Next.js app within an hour. His problem-solving skills are unmatched.",
   "name": "Omar Khalid",

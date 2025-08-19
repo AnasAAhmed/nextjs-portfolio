@@ -15,49 +15,49 @@ const Hero = () => {
       customPaddings='s'
       id="hero"
     >
-      <div className="container pb-10 mt-10 sm:mt-20 md:mt-40 relative " >
+      <div className="container pb-10 mt-1 sm:mt-20 md:mt-30 relative " >
         {/* <GradientRight /> */}
         {/* <GradientLeft/> */}
 
         <div className="relative z-1 max-w-[76rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="srb-only text-4xl font-semibold md:text-5xl lg:text-6xl mbf-6">
-            Hi' i am
+          <h1 className="text-4xl font-semibold md:texts-4xl lg:text-7xl mbf-6">
+            Hi, <br /> i am
             <span className="bg-clip-text bg-gradient-to-tl from-blue-400 to-violet-600  text-transparent">
               &nbsp;Anas Ahmed
             </span>
           </h1>
           <br />
-          <h1 className="sr-only text-2xl font-semibold md:text-3xl lg:text-4xl mb-6">
+          <h3 className="sr-only text-2xl font-semibold md:text-3xl lg:text-4xl mb-s6">
             A Full Stack Developer
-          </h1>
+          </h3>
           <SplitText
             text="A Full Stack Developer"
             mode="words"
-            className="text-2xl font-semibold md:text-3xl lg:text-4xl mb-6"
+            className="text-xl font-semibold md:text-2xl lg:text-4xl mb-3"
             itemClassName="mx-[1px]"           // slight spacing
             delayPerItem={0.03}
             duration={0.3}
             y={12}
           />
           <SplitText
-            text=" I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
-            Currently expanding my expertise in Agentic AI and Web 3.0."
+            text=" I craft responsive, high-performance web applications using Next.js, React.js, and Node.js. Currently expanding my expertise in Agentic AI and Web 3.0."
             mode="words"
             className="max-w-4xl font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px] "
             itemClassName="mx-[1px]"           // slight spacing
             delayPerItem={0.03}
-            duration={0.3}
-            y={10}
+            duration={0.1}
+            y={7}
           />
           <br />
-          <p style={{ fontWeight: '300' }} className="sr-only max-w-4xl mx-auto mb-6 text-sm md:text-xl lg:text-2xl  lg:mb-8">
+          <p style={{ fontWeight: '400' }} className="sr-only max-w-4xl mx-auto mb-6 text-sm md:text-xl lg:text-2xl  lg:mb-8">
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in <strong>Agentic AI</strong> and Web&nbsp;3.0.
           </p>
           <Button download href="/anas-ahmed-resume.pdf" white className="mr-3">
             My Resume
           </Button>
-          <Button inNewTab href="https://www.fiverr.com/users/anas_ahmed_24?utm_source=anas_portfolio&utm_medium=website&utm_campaign=anas_portfolio_cta&utm_content=skill_button" >
+          <br className="sm:hidden"/>
+          <Button className="max-sm:mt-4" inNewTab href="https://www.fiverr.com/users/anas_ahmed_24?utm_source=anas_portfolio&utm_medium=website&utm_campaign=anas_portfolio_cta&utm_content=skill_button" >
             Hire Me
           </Button>
         </div>

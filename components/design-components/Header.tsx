@@ -36,8 +36,9 @@ const Header = () => {
       className={`fixed top-0 left-0 w-full mb-5 z-30 bg-background sm:border-b border-foreground/30 md:backdrop-blur-sm `}
     >
       <div className="flex items-center justify-between px-5 md:px-7.5 xl:px-10 max-md:py-2">
-        <Link prefetch={false} className="block w-24 xl:mr-8" href="/">
-          <img src={'/logo.svg'} className="dark:drop-shadow-[0_0_0.1rem_#ffffff70] invert" width={190} height={40} alt="Conwrite.ai" />
+        <Link prefetch={false} className="flex items-center gap-2 uppercase font-bold text-xl w-2s4 xl:mr-8" href="/">
+          <img src={'/brainwave-symbol.svg'} className="" width={40} height={40} alt="logo" />
+        Portfolio
         </Link>
 
         <nav

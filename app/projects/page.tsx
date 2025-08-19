@@ -25,14 +25,14 @@ const page = async ({ searchParams }: { searchParams: Promise<{ category: string
     <Section crosses crossesOffset="lg:translate-y-[5.25rem]"
     >
       <SearchControls categories={Array.from(new Set(categories))} />
-      <div className="container pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center mt-10 space-y-10 text-center">
+      <div className="container pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center mt-10 spasce-y-10 text-center">
         {filteredProjects.map((proj: any, index: number) => (
           <div
             key={index}
             className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
           >
             <div
-              className={`relatsive hover:scale-105 w-full sm:h-[150px] md:h-[250px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
+              className={`relatsive hover:scale-105 w-full sm:h-[165px] md:h-[275px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
             >
               <img
                 src={proj.image}

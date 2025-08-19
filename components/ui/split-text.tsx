@@ -21,7 +21,7 @@ export default function SplitText({
   itemClassName = "",
   once = true,
   amount = 0.3,
-  duration = 0.4,
+  duration = 0.3,
   delayPerItem = 0.04,
   y = 12,
 }: SplitTextProps) {
@@ -58,7 +58,7 @@ export default function SplitText({
             }}
           >
             {/* optional mask for a crisper "reveal" */}
-            <span className="inline-block overflow-hidden align-baseline">
+            <span className="inline-bloack overflow-hidden align-baseline">
               <span className="inline-block">{piece}</span>
             </span>
           </motion.span>
