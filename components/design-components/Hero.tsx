@@ -33,7 +33,7 @@ const Hero = () => {
           <SplitText
             text="A Full Stack Developer"
             mode="words"
-            className="text-xl font-semibold md:text-2xl lg:text-4xl mb-3"
+            className="text-xl font-semibold md:text-2xl lg:text-4xl mb-3 sm:mb-6"
             itemClassName="mx-[1px]"           // slight spacing
             delayPerItem={0.03}
             duration={0.3}
@@ -45,11 +45,11 @@ const Hero = () => {
             className="max-w-4xl font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px] "
             itemClassName="mx-[1px]"           // slight spacing
             delayPerItem={0.03}
-            duration={0.1}
+            duration={0.2}
             y={7}
           />
           <br />
-          <p style={{ fontWeight: '400' }} className="sr-only max-w-4xl mx-auto mb-6 text-sm md:text-xl lg:text-2xl  lg:mb-8">
+          <p style={{ fontWeight: '400' }} className="sr-only max-w-4xl mx-auto mb-6 text-sm md:text-lg lg:text-xl  lg:mb-8">
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in <strong>Agentic AI</strong> and Web&nbsp;3.0.
           </p>

@@ -2,8 +2,60 @@ import Section from '@/components/design-components/Section'
 import SearchControls from '@/components/Search'
 import { projects } from '@/lib/constants'
 import { ExternalLink } from 'lucide-react'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Anas Ahmed | Projects",
+  description:
+    "Projects of a full-stack web developer skilled in AI-Agents, Next.js, React, Node.js, MongoDB, PostgreSQL, and API integrations. Building scalable, high-performance web applications with modern technologies.",
+  keywords: [
+    "Anas Ahmed",
+    "Web Developer Portfolio",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React.js",
+    "FastApi",
+    "Python",
+    "Node.js",
+    "Ai Agents",
+    "Agentic AI",
+    "Frontend Developer",
+    "3d",
+    "UI/IX",
+    "MongoDB",
+    "PostgreSQL",
+    "API Integration",
+    "Vercel",
+    "Cdn & Backend Caching",
+    "RTK Query",
+    "Freelance Developer"
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    title: "Anas Ahmed | Projects",
+    description:
+      "Discover Anas Ahmed’s portfolio showcasing projects in Next.js, React, Node.js, Python, MongoDB/PostgresSql/MySql, and scalable web development solutions.",
+    url: `https://anasahmed-portfolio.vercel.app/projects`,
+    images: [
+      {
+        url: "/projects.avif",
+        width: 1200,
+        height: 630,
+        alt: "Project showcase preview",
+      }
+    ],
+    siteName: "Anas Ahmed | Portfolio",
+  },
+};
 
 const page = async ({ searchParams }: { searchParams: Promise<{ category: string, query: string }> }) => {
   const { category = '', query = '' } = await searchParams
