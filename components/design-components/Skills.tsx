@@ -7,6 +7,7 @@ import Image from "next/image";
 import Heading from "./Heading";
 import SplitText from "../ui/split-text";
 import SkillsCircle from "./design/SkillsCircle";
+import { GradientLightLeft } from "./design/Benefits";
 
 const Skills = () => {
   return (
@@ -65,7 +66,7 @@ const Skills = () => {
               </div>
 
             </div>
-            {/* <GradientLightLeft /> */}
+            <GradientLightLeft />
             <SkillsCircle skills={skills} />
 
             <LeftCurve />

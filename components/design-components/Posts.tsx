@@ -41,7 +41,7 @@ const Posts = ({ data2 }: { data2: PostType }) => {
                     title="My Social Media Posts"
                     text=" Get started to Know my Knowledged and my work with social media updates."
                 />
-        <h1 className="sr-only">My Social Media Posts</h1>
+                <h1 className="sr-only">My Social Media Posts</h1>
 
                 <Carousel className="w-full max-w-6xl ">
                     <CarouselContent className="flex items-center">

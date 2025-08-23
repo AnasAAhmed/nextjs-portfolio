@@ -13,7 +13,7 @@ export const dynamic = 'force-static';
 
 export default async function Home() {
 //   const fetchLinkPreview = async (urls:string[]) => {
-//   const res = await fetch(`http://localhost:3000/api/link-preview`, {
+//   const res = await fetch(`https://anasahmed-potfolio.vercel.app/api/link-preview`, {
 //     method: "POST",
 //     headers: {
 //       "Content-Type": "application/json",

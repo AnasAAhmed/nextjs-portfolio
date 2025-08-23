@@ -20,7 +20,7 @@ const Section = ({
     <div
       id={id}
       className={`
-      relative 
+      relative flex flex-col justify-center items-center
       ${
         // customPaddings ||
         `lg:py-12 xl:py-24 sm:px-16`

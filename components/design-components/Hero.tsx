@@ -53,8 +53,8 @@ const Hero = () => {
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in <strong>Agentic AI</strong> and Web&nbsp;3.0.
           </p>
-          <Button download href="/anas-ahmed-resume.pdf" white className="mr-3">
-            My Resume
+          <Button title="Dont need to download, Just View in a website " href="/resume" white className="mr-3">
+            View Resume
           </Button>
           <br className="sm:hidden"/>
           <Button className="max-sm:mt-4" inNewTab href="https://www.fiverr.com/users/anas_ahmed_24?utm_source=anas_portfolio&utm_medium=website&utm_campaign=anas_portfolio_cta&utm_content=skill_button" >
