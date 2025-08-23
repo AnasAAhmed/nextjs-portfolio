@@ -42,14 +42,14 @@ const Hero = () => {
           <SplitText
             text=" I craft responsive, high-performance web applications using Next.js, React.js, and Node.js. Currently expanding my expertise in Agentic AI and Web 3.0."
             mode="words"
-            className="max-w-4xl font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px] "
+            className="max-w-4xl max-md:hidden font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px] "
             itemClassName="mx-[1px]"           // slight spacing
             delayPerItem={0.03}
             duration={0.2}
             y={7}
           />
           <br />
-          <p style={{ fontWeight: '400' }} className="sr-only max-w-4xl mx-auto mb-6 text-sm md:text-lg lg:text-xl  lg:mb-8">
+          <p style={{ fontWeight: '400' }} className="md:sr-only max-w-4xl mx-auto mb-6 text-sm md:text-lg lg:text-xl  lg:mb-8">
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in <strong>Agentic AI</strong> and Web&nbsp;3.0.
           </p>

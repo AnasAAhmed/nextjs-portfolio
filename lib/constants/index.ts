@@ -29,12 +29,12 @@ export const navigation = [
     url: "/#timeline",
     onlyMobile: false
   },
-  // {
-  //   id: "6",
-  //   title: "Contact",
-  //   url: "/#contact",
-  //   onlyMobile: false
-  // },
+  {
+    id: "5",
+    title: "Contact",
+    url: "mailto:anasahmedd244@gmail.com",
+    onlyMobile: false
+  },
 ];
 
 export const heroIcons = ['/home-smile.svg', '/file-02.svg', '/search-md.svg', '/plus-square.svg'];
@@ -45,7 +45,7 @@ export const companyLogos = ['/yourlogo.svg', '/yourlogo.svg', '/yourlogo.svg', 
 
 export const feturedProjects = [
   {
-    "heading": "Ecommerce Store & CMS",
+    "heading": "Ecommerce Store & CMS with Customizable HomePage & SEO content",
     "text": "My first large-scale full-stack eCommerce platform with custom CMS, built with Next.js, Reactjs MongoDB - all designed for top-notch UX and SEO."
   },
   {
@@ -78,7 +78,7 @@ export const projectHighlights = [
       "span": 'Enhanced security via server callbacks and device fingerprinting'
     },
     {
-      "p": 'Complete custom CMS in Reactjs',
+      "p": 'Complete custom CMS in Reactjs with Customizable HomePage & SEO content on store from CMS',
       "span": 'Role-based access, live previews, and instant revalidation APIs and Optimized aggregate queries for dashboard'
     },
   ],
@@ -303,33 +303,24 @@ export const services = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: "/socials/discord.svg",
+    title: "My Instagram",
+    iconUrl: "/socials/instagram.png",
+    size:28,
     url: "#",
   },
-  {
+{
     id: "1",
-    title: "Twitter",
-    iconUrl: "/socials/twitter.svg",
-    url: "#",
+    title: "My LinkedIn Profile",
+    iconUrl: "/socials/LinkedIn.svg",
+    size:18,
+    url: "https://www.linkedin.com/in/anas-ahmed-37258b319/",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: "/socials/instagram.svg",
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: "/socials/telegram.svg",
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: "/socials/facebook.svg",
-    url: "#",
+    title: "My Github Profile",
+    iconUrl: "/socials/Github.svg",
+    size:18,
+    url: "https://github.com/AnasAAhmed",
   },
 ];
 
@@ -368,8 +359,8 @@ export const posts = [
 
 export const projects = [
   {
-    "title": "Custom store & CMS in Nextjs",
-    "description": "Shop high-quality products at Borcelle professinaol spa website in nextjs mongodb Tcs Courier api. By Anas Ahmed Gituhb:https://github.com/AnasAAhmed",
+    "title": "Custom store & CMS in Nextjs with Customizable HomePage & SEO content on store from CMS",
+    "description": "Customizable HomePage & SEO content on store from CMS.Shop high-quality products at Borcelle professinaol spa website in nextjs mongodb Tcs Courier api. By Anas Ahmed Gituhb:https://github.com/AnasAAhmed",
     "image": "https://i.ytimg.com/vi/SR4dFgdKUyI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpWCWIN4jQkW5QMj4yqb_Z6SIk8g",
     "url": "https://ecom-store-anas.vercel.app",
     "category": "full-stack",
@@ -396,11 +387,11 @@ export const projects = [
     "category": "full-stack-with-ai",
   },
   {
-    "title": "3D Personal Portfolio with Three.js, Reactjs",
-    "description": "A 3D portfolio featuring smooth animations, interactive elements, and an immersive user experience.",
-    "image": "https://utfs.io/f/d78048ea-c332-419d-b619-a9155b4cd31a-palkka.png",
-    "url": "https://anas3d.netlify.app",
-    "category": "frontend-3d",
+    "title": "Figma clone with Fabric.js, Liveblocks",
+    "description": "figma-clone: A collaborative design tool inspired by Figma, featuring Liveblocks for real-time editing, Fabric.js for canvas rendering, live mouse position tracking, real-time reactions, comments, and more for seamless teamwork.",
+    "image": "https://i.ytimg.com/vi/oKIThIihv60/hqdefault.jpg",
+    "url": "https://figma-clone-ahmed.vercel.app/",
+    "category": "frontend",
   },
   {
     "title": "3D Personal Portfolio with Three.js, Reactjs",
@@ -422,6 +413,13 @@ export const projects = [
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/f7a03500157b877cb25c539d0ea07e6f-1755611113088/streamlit-ai.png",
     "url": "https://imagewrite-anas-giaic.streamlit.app",
     "category": "python-with-ai",
+  },
+  {
+    "title": "3D Personal Portfolio with Three.js, Reactjs",
+    "description": "A 3D portfolio featuring smooth animations, interactive elements, and an immersive user experience.",
+    "image": "https://utfs.io/f/d78048ea-c332-419d-b619-a9155b4cd31a-palkka.png",
+    "url": "https://anas3d.netlify.app",
+    "category": "frontend-3d",
   },
   {
     "title": "iNotebook Save & secure your note on cloud",
@@ -458,8 +456,28 @@ export const projects = [
     "url": "https://imagerator-ai.vercel.app",
     "category": "full-stack-with-ai",
   },
+   {
+    "title": "3 AI Agents Weather Info Agent, Agent with Multiple Tools Smart, Customer Support Bot ",
+    "description": "⚡ Continuing my AI journey with GIAIC (Thursday Evening, Sir Bibla Fareed’s class) I recently completed Assignments 4–6 and recorded a demo 🎥",
+    "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE2xUUXUWlnZA/thumbnail-with-play-button-overlay-high/B4EZjWMkQxGwD0-/0/1755940289620?e=2147483647&v=beta&t=66GR_x5XEYsDFJREboVvLcfmhds3I9Nuv6rDYa2VejI",
+    "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364947402035712001-JQ_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
+    "category": "ai-agents-with-python",
+  },
+   {
+    "title": "More AI Agents Simple Agent(Chainlit & Python), Basic FAQ Agent, Math Function Tool Agent ",
+    "description": "⏳ Sometimes deadlines push us to discover what we’re capable of. This week, I had to complete 6 assignments in a single day for GIAIC",
+    "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE1s60kGLnh5A/thumbnail-with-play-button-overlay-high/B4EZjS3P9BGoD0-/0/1755884378918?e=2147483647&v=beta&t=9ZJAhtCz2x7UozSzD3mcdivx8gCeThP_Kst4pCn4lfg",
+    "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364712929780269056-Y99G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
+    "category": "ai-agents-with-python",
+  },
+  //  {
+  //   "title": "Imaginify - AI-powered image editing in Nextjs",
+  //   "description": "image-ai-toolkit: An advanced image editing app with AI-powered object removal, color modification, resolution enhancement, and image extension. Includes Cloudinary SDK for efficient image search and management. Built for seamless user experience.",
+  //   "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/58cb5a18afaae92c5f06334617c32a5d-1755621301804/imagerator.png",
+  //   "url": "https://imagerator-ai.vercel.app",
+  //   "category": "full-stack-with-ai",
+  // },
 ]
-// https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/2a5065afac802fd0f23eda1494627227-1755614720839/Screenshot%20(245).png
 export const feedbacks = [{
   "quote": "Anas helped me debug a complex authentication issue in my Next.js app within an hour. His problem-solving skills are unmatched.",
   "name": "Omar Khalid",

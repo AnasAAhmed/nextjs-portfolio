@@ -42,7 +42,7 @@ export default function SearchControls({ categories }: { categories: string[] })
   }, [category, router]);
 
   return (
-    <div className="flex gap-2 my-6">
+    <div className="flex gap-2 pt-14 md:pt-20 lg:pt-5 xl:pt-0 my-6">
       <select
         value={category}
         onChange={(e) => setCategory(e.target.value)}

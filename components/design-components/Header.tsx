@@ -4,16 +4,14 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
-import { Suspense, useState, } from "react";
+import { Suspense,  useState, } from "react";
 import { navigation } from "@/lib/constants";
 import Link from "next/link";
-import ThemeToggle from "./Toggler";
+import DarkModeToggle from "./Toggler";
 import MenuSvg from "@/assets/svg/MenuSvg";
-import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
-  const pathname = usePathname();
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
@@ -33,14 +31,13 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full mb-5 z-30 bg-background sm:border-b border-foreground/30 md:backdrop-blur-sm `}
+      className={`fixed top-0 left-0 w-full mb-5 z-30 bg-background/70 sm:border-b border-foreground/30 md:backdrop-blur-sm `}
     >
       <div className="flex items-center justify-between px-5 md:px-7.5 xl:px-10 max-md:py-2">
         <Link prefetch={false} className="flex items-center gap-2 uppercase font-bold text-xl w-2s4 xl:mr-8" href="/">
           <img src={'/brainwave-symbol.svg'} className="" width={40} height={40} alt="logo" />
-        Portfolio
+          Portfolio
         </Link>
-
         <nav
           className={`${openNavigation ? "flex" : "hidden"
             } fixed top-0 left-0 right-0 bottom-0 md:static md:flex md:mx-auto md:bg-transparent`}
@@ -53,12 +50,11 @@ const Header = () => {
                 title={item.title}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative text-2xl uppercase text-n-1 transition-colors ${item.onlyMobile ? "md:hidden" : ""
-                  } px-6 py-6 md:py-8 md:-mr-0.25 md:text-xs md:font-semibold md:leading-5 lg:hover:text-n-1 xl:px-12`}>
+                className={`hover:text-indigo-400 block relative text-2xl uppercase transition-colors ${item.onlyMobile ? "md:hidden" : ""
+                  } px-2 lg:px-6 py-6 md:py-6 md:-mr-0.25 md:text-xs md:font-semibold md:leading-5 lg:hover:text-n-1 `}>
                 {item.title}
               </Link>
             ))}
-
           </div>
 
           <HamburgerMenu />
@@ -67,9 +63,17 @@ const Header = () => {
         <div className="flex gap-2 items-center">
 
           <Suspense fallback={<div className='h-5 w-16 p-1 rounded-md bg-gray-300 animate-pulse' />}>
-            <ThemeToggle />
-
+            <DarkModeToggle />
           </Suspense>
+          <Button
+            className="text-sm max-sm:hidden gap-1 ml-auto"
+            px="px-3"
+            inNewTab
+            title="My Github Profile"
+            href="https://github.com/AnasAAhmed"
+          >
+            Github ⭐️(34)
+          </Button>
           <Button
             className="ml-auto md:hidden"
             px="px-3"

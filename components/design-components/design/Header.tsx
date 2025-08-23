@@ -30,7 +30,7 @@ export const BackgroundCircles = () => {
 
 export const HamburgerMenu = () => {
   return (
-    <div className="absolute bg-background inset-0 pointer-events-none md:hidden">
+    <div className="absolute z-s50 bg-background inset-0 pointer-events-none md:hidden">
       <div className="absolute inset-0 opacity-[.03]">
         <img
           className="w-full h-full object-cover"

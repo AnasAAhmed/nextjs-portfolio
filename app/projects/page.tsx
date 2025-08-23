@@ -84,7 +84,7 @@ const page = async ({ searchParams }: { searchParams: Promise<{ category: string
             className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
           >
             <div
-              className={`relatsive hover:scale-105 w-full sm:h-[165px] md:h-[275px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
+              className={`relatsive hover:scale-105 w-full sm:h-[1s65px] md:h-[275px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
             >
               <img
                 src={proj.image}

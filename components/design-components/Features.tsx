@@ -91,7 +91,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
           className="relative flex flex-col justify-between h-full p-8"
         >
           <div className="flex-1 flex flex-col justify-center">
-            <h3 className="text-lg sm:text-2xl font-bold mb-4">{projects[0].title}</h3>
+            <h3 className="text-lg sm:text-2xl font-bold mb-4 max-w-lg">{projects[0].title}</h3>
             {projects[0].description}
           </div>
           <div className="md:absolute bottom-0 right-[-40px] sm:max-w-[500px] sm:max-h-[400px] rounded-xl shadow-lg overflow-hidden">
