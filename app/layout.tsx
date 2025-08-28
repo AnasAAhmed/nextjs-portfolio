@@ -84,10 +84,8 @@ export default function RootLayout({
           __html: `
             (function() {
               const theme = localStorage.getItem('theme')
-              if (theme === 'light' || (!theme && true)) { // default dark
+              if (theme === 'light') {
                 document.documentElement.classList.add('light')
-              } else {
-                document.documentElement.classList.remove('light')
               }
             })()
           `
