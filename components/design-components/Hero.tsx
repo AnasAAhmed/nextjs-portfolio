@@ -27,9 +27,9 @@ const Hero = () => {
             </span>
           </h1>
           <br />
-          <h3 className="sr-only text-2xl font-semibold md:text-3xl lg:text-4xl mb-s6">
+          <h2 className="sr-only text-2xl font-semibold md:text-3xl lg:text-4xl mb-s6">
             A Full Stack Developer
-          </h3>
+          </h2>
           <SplitText
             text="A Full Stack Developer"
             mode="words"

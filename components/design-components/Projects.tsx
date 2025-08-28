@@ -65,12 +65,12 @@ const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectTy
                                             className="border object-cover rounded-lg w-full h-[300px]"
                                         />
                                     </div>
-                                    <h4
+                                    <h6
                                         title={proj.title}
                                         className="text-lg line-clamp-2 max-w-96 font-medium mt-4 mx-auto"
                                     >
                                         {proj.title}
-                                    </h4>
+                                    </h6>
                                     <p
                                         title={proj.description}
                                         className="text-sm text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
@@ -111,6 +111,7 @@ const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectTy
                     <Link
                         className="text-xs font-code font-bold tracking-wider uppercase border-b"
                         href="/projects"
+                        prefetch
                     >
                         See all projects
                     </Link>

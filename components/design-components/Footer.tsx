@@ -11,8 +11,8 @@ const Footer = () => {
           Anas Ahmed © {new Date().getFullYear()} <br /> <a href="mailto:anasahmedd244@gmail.com">anasahmedd244@gmail.com</a>
         </p>
 
-        <ul className="flex gap-5 flex-wrap items-center">
-         
+        <div className="flex gap-5 flex-wrap items-center">
+
           {socials.map((item) => (
             <a
               key={item.id}
@@ -25,14 +25,22 @@ const Footer = () => {
             </a>
           ))}
           <a
-            href={'https://anas3d.netlify.app/'}
-            title={'My 3d Portfolio'}
+            href={'https://github.com/AnasAAhmed'}
+            title={'My Github Profile'}
             target="_blank"
             className="flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full transition-colors hover:bg-n-6"
           >
             <BriefcaseBusiness size={'18px'} color="black" />
           </a>
-        </ul>
+          <a
+            title={'My 3d Portfolio'}
+            href={'https://anas3d.netlify.app/'}
+            target="_blank"
+            className="flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full transition-colors hover:bg-n-6"
+          >
+            <BriefcaseBusiness size={'18px'} color="black" />
+          </a>
+        </div>
       </div>
     </Section>
   );

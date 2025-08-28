@@ -16,7 +16,7 @@ const Notification = ({ className, title }:{className?:string;title:string}) => 
       />
 
       <div className="flex-1">
-        <h6 className="mb-1 font-semibold text-base">{title}</h6>
+        <h4 className="mb-1 font-semibold text-base">{title}</h4>
 
         <div className="flex items-center justify-between">
           <ul className="flex -m-0.5">

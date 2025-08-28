@@ -16,7 +16,7 @@ const Button = ({ download = false, inNewTab, className, title, href, onClick, c
   );
 
   const renderLink = () => (
-    <Link download={download} style={{ color: white ? "black" : "" }} title={title || ''} target={inNewTab ? "_blank" : ""} href={href!} className={classes}>
+    <Link prefetch={false} download={download} style={{ color: white ? "black" : "" }} title={title || ''} target={inNewTab ? "_blank" : ""} href={href!} className={classes}>
       <span className={spanClasses}>{children}</span>
       {ButtonSvg({ white: white || false })}
     </Link>

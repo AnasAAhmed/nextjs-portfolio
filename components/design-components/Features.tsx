@@ -17,7 +17,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
         <ul className="body-2">
           {projectHighlights[0].map((i, _) => (
             <li key={_} className="flex items-start max-w-78 py-2 border-t border-n-6">
-              <img width={24} height={24} src="/check.svg" />
+              <img width={24} height={24} alt="check icon" src="/check.svg" />
               <p className="ml-4 text-sm">{i.p}<br /> </p>
             </li>
           ))}
@@ -57,7 +57,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
           <ul className="body-2">
             {projectHighlights[1].map((i, _) => (
               <li key={_} className="flex items-start py-2 max-w-78 border-t border-n-6">
-                <img width={24} height={24} src="/check.svg" />
+                <img width={24} height={24} alt="check icon" src="/check.svg" />
                 <p className="ml-4 text-sm">{i.p}<br /> </p>
               </li>
             ))}
@@ -91,7 +91,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
           className="relative flex flex-col justify-between h-full p-8"
         >
           <div className="flex-1 flex flex-col justify-center">
-            <h3 className="text-lg sm:text-2xl font-bold mb-4 max-w-lg">{projects[0].title}</h3>
+            <h6 className="text-lg sm:text-2xl font-bold mb-4 max-w-lg">{projects[0].title}</h6>
             {projects[0].description}
           </div>
           <div className="md:absolute bottom-0 right-[-40px] sm:max-w-[500px] sm:max-h-[400px] rounded-xl shadow-lg overflow-hidden">
@@ -103,7 +103,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
           containerClassName="bg-blue-800 sm:col-span-2 lg:col-span-1"
           className="flex flex-col h-full"
         >
-          <h3 className="text-lg sm:text-2xl font-bold mb-4">{projects[1].title}</h3>
+          <h6 className="text-lg sm:text-2xl font-bold mb-4">{projects[1].title}</h6>
           {projects[1].description}
           <div className="mt-auto overflow-hidden rounded-lg">
             {projects[1].content}
@@ -115,7 +115,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
           className="flex flex-col lg:flex-row gap-6 h-full"
         >
           <div className="flex-1 flex flex-col justify-center">
-            <h3 className="text-lg sm:text-2xl font-bold mb-4">{projects[2].title}</h3>
+            <h6 className="text-lg sm:text-2xl font-bold mb-4">{projects[2].title}</h6>
             {projects[2].description}
           </div>
           {/* <div className="flex-1 max-h-[300px] max-w-[450px] self-enfd overflow-hidden rounded-lg"> */}

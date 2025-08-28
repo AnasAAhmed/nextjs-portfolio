@@ -315,13 +315,6 @@ export const socials = [
     size:18,
     url: "https://www.linkedin.com/in/anas-ahmed-37258b319/",
   },
-  {
-    id: "2",
-    title: "My Github Profile",
-    iconUrl: "/socials/github.svg",
-    size:18,
-    url: "https://github.com/AnasAAhmed",
-  },
 ];
 
 export const posts = [
