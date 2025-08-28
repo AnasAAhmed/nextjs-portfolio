@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import { socials } from "@/lib/constants";
-import { BriefcaseBusiness } from "lucide-react";
+import { BriefcaseBusiness, Github } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
             target="_blank"
             className="flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full transition-colors hover:bg-n-6"
           >
-            <BriefcaseBusiness size={'18px'} color="black" />
+            <Github size={'18px'} color="black" />
           </a>
           <a
             title={'My 3d Portfolio'}
