@@ -3,12 +3,14 @@ export const navigation = [
     id: "0",
     title: "Home",
     inNewTab:false,
+    prefetch:false,
     url: "/#hero",
     onlyMobile: false
   },
   {
     id: "1",
     inNewTab:false,
+    prefetch:false,
     title: "Services",
     url: "/#services",
     onlyMobile: false
@@ -17,6 +19,7 @@ export const navigation = [
     id: "2",
     title: "Skills",
     inNewTab:false,
+    prefetch:false,
     url: "/#skills",
     onlyMobile: false
   },
@@ -25,12 +28,14 @@ export const navigation = [
     title: "Projects",
     inNewTab:false,
     url: "/#projects",
+    prefetch:false,
     onlyMobile: false
   },
   {
     id: "4",
     title: "Education",
     inNewTab:false,
+    prefetch:false,
     url: "/#timeline",
     onlyMobile: false
   },
@@ -38,12 +43,14 @@ export const navigation = [
     id: "5",
     title: "Contact",
     inNewTab:true,
+    prefetch:false,
     url: "https://www.fiverr.com/users/anas_ahmed_24",
     onlyMobile: false
   },
   {
     id: "6",
     title: "V2",
+    prefetch:true,
     inNewTab:false,
     url: "/v2",
     onlyMobile: false

@@ -45,7 +45,7 @@ const Header = () => {
           <div className="relative z-2 flex flex-col items-center justify-center m-auto md:flex-row">
             {navigation.map((item) => (
               <Link
-                prefetch={false}
+                prefetch={item.prefetch}
                 key={item.id}
                 title={item.title}
                 target={item.inNewTab ? '_blank' : ""}

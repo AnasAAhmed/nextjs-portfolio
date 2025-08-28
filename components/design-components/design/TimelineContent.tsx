@@ -33,16 +33,7 @@ function EducationItem({
 }: EducationItemType) {
     return (
         <section className="bg-primary/5 backdrop-blur-sm rounded-xl p-4 border border-primary/10 spacse-y-6">
-            <h2 className="sr-only text-2xl font-semibold text-primary/90 mb-4">{heading ? heading : "Education"}</h2>
-            <SplitText
-                text={heading ? heading : "Education"}
-                mode="chars"
-                className="text-2xl font-semibold text-primary/90 mb-4"
-                delayPerItem={0.03}
-                once
-                duration={0.3}
-                y={12}
-            />
+            <h2 className="text-2xl font-semibold text-primary/90 mb-4">{heading ? heading : "Education"}</h2>         
             <div className="flex flex-col gap-4 border-b border-primary/10 pbs-4 last:border-none">
 
                 <div className="flex max-sm:flex-col gap-4 border-b border-primary/10 pb-4 last:border-none">
