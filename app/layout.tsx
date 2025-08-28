@@ -78,7 +78,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme')
+              if (theme === 'light' || (!theme && true)) { // default dark
+                document.documentElement.classList.add('light')
+              } else {
+                document.documentElement.classList.remove('light')
+              }
+            })()
+          `
+        }} />
+      </head>
       <body
         className={`${geistSans.variable} font-sans ${geistMono.variable} antialiased`}
       >

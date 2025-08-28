@@ -16,17 +16,17 @@ function Page() {
     return (
         <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
             {/* <Navbar /> */}
-            <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
+            <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 not-light:bg-neutral-800/80">
                 <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
             </div>
-            <div className="absolute inset-y-0 right-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
+            <div className="absolute inset-y-0 right-0 h-full w-px bg-neutral-200/80 not-light:bg-neutral-800/80">
                 <div className="absolute h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
             </div>
-            <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 dark:bg-neutral-800/80">
+            <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 not-light:bg-neutral-800/80">
                 <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
             </div>
             <div className="px-4 py-10 md:py-20">
-                <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
+                <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl not-light:text-slate-300">
                     {"Launch your website in hours, not days"
                         .split(" ")
                         .map((word, index) => (
@@ -56,7 +56,7 @@ function Page() {
                         duration: 0.3,
                         delay: 0.8,
                     }}
-                    className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+                    className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 not-light:text-neutral-400"
                 >
                     With AI, you can launch your website in hours, not days. Try our best
                     in class, state of the art, cutting edge AI tools to get your website
@@ -75,10 +75,10 @@ function Page() {
                     }}
                     className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
                 >
-                    <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                    <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 not-light:bg-white not-light:text-black not-light:hover:bg-gray-200">
                         Explore Now
                     </button>
-                    <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+                    <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 not-light:border-gray-700 not-light:bg-black not-light:text-white not-light:hover:bg-gray-900">
                         Contact Support
                     </button>
                 </motion.div>
@@ -95,9 +95,9 @@ function Page() {
                         duration: 0.3,
                         delay: 1.2,
                     }}
-                    className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
+                    className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md not-light:border-neutral-800 not-light:bg-neutral-900"
                 >
-                    <div className="w-full overflow-hidden rounded-xl border border-gray-300 dark:border-gray-700">
+                    <div className="w-full overflow-hidden rounded-xl border border-gray-300 not-light:border-gray-700">
                         <img
                             src="https://assets.aceternity.com/pro/aceternity-landing.webp"
                             alt="Landing page preview"
@@ -109,11 +109,11 @@ function Page() {
                 </motion.div>
             </div>
             <div className="px-8">
-                <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+                <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black not-light:text-white">
                     Packed with thousands of features
                 </h4>
 
-                <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+                <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal not-light:text-neutral-300">
                     From Image generation to video generation, Everything AI has APIs for
                     literally everything. It can even create this website copy for you.
                 </p>
@@ -135,7 +135,7 @@ function TimelineDemo() {
             title: "2024",
             content: (
                 <div>
-                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm not-light:text-neutral-200">
                         Built and launched Aceternity UI and Aceternity UI Pro from scratch
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -175,11 +175,11 @@ function TimelineDemo() {
             title: "Early 2023",
             content: (
                 <div>
-                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm not-light:text-neutral-200">
                         I usually run out of copy, but when I see content this big, I try to
                         integrate lorem ipsum.
                     </p>
-                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm not-light:text-neutral-200">
                         Lorem ipsum is for people who are too lazy to write copy. But we are
                         not. Here are some more example of beautiful designs I built.
                     </p>
@@ -220,23 +220,23 @@ function TimelineDemo() {
             title: "Changelog",
             content: (
                 <div>
-                    <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+                    <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm not-light:text-neutral-200">
                         Deployed 5 new components on Aceternity today
                     </p>
                     <div className="mb-8">
-                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm not-light:text-neutral-300">
                             ✅ Card grid component
                         </div>
-                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm not-light:text-neutral-300">
                             ✅ Startup template Aceternity
                         </div>
-                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm not-light:text-neutral-300">
                             ✅ Random file upload lol
                         </div>
-                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm not-light:text-neutral-300">
                             ✅ Himesh Reshammiya Music CD
                         </div>
-                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+                        <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm not-light:text-neutral-300">
                             ✅ Salman Bhai Fan Club registrations open
                         </div>
                     </div>
@@ -285,35 +285,35 @@ function GlowingEffectDemo() {
     <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
       <GridItem
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-        icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Box className="h-4 w-4 text-black not-light:text-neutral-400" />}
         title="Do things the right way"
         description="Running out of copy so I'll write anything."
       />
  
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-        icon={<Settings className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Settings className="h-4 w-4 text-black not-light:text-neutral-400" />}
         title="The best AI code editor ever."
         description="Yes, it's true. I'm not even kidding. Ask my mom if you don't believe me."
       />
  
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-        icon={<Lock className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Lock className="h-4 w-4 text-black not-light:text-neutral-400" />}
         title="You should buy Aceternity UI Pro"
         description="It's the best money you'll ever spend"
       />
  
       <GridItem
         area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-        icon={<Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Sparkles className="h-4 w-4 text-black not-light:text-neutral-400" />}
         title="This card is also built by Cursor"
         description="I'm not even kidding. Ask my mom if you don't believe me."
       />
  
       <GridItem
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-        icon={<Search className="h-4 w-4 text-black dark:text-neutral-400" />}
+        icon={<Search className="h-4 w-4 text-black not-light:text-neutral-400" />}
         title="Coming soon on Aceternity UI"
         description="I'm writing the code as I record this, no shit."
       />
@@ -339,16 +339,16 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
           proximity={64}
           inactiveZone={0.01}
         />
-        <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+        <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 not-light:shadow-[0px_0px_27px_0px_#2D2D2D]">
           <div className="relative flex flex-1 flex-col justify-between gap-3">
             <div className="w-fit rounded-lg border border-gray-600 p-2">
               {icon}
             </div>
             <div className="space-y-3">
-              <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-black md:text-2xl/[1.875rem] dark:text-white">
+              <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance text-black md:text-2xl/[1.875rem] not-light:text-white">
                 {title}
               </h3>
-              <h2 className="font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
+              <h2 className="font-sans text-sm/[1.125rem] text-black md:text-base/[1.375rem] not-light:text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
                 {description}
               </h2>
             </div>
@@ -429,27 +429,27 @@ const Feature = ({
     return (
         <div
             className={cn(
-                "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
-                (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
-                index < 4 && "lg:border-b dark:border-neutral-800"
+                "flex flex-col lg:border-r  py-10 relative group/feature not-light:border-neutral-800",
+                (index === 0 || index === 4) && "lg:border-l not-light:border-neutral-800",
+                index < 4 && "lg:border-b not-light:border-neutral-800"
             )}
         >
             {index < 4 && (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 not-light:from-neutral-800 to-transparent pointer-events-none" />
             )}
             {index >= 4 && (
-                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+                <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 not-light:from-neutral-800 to-transparent pointer-events-none" />
             )}
-            <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
+            <div className="mb-4 relative z-10 px-10 text-neutral-600 not-light:text-neutral-400">
                 {icon}
             </div>
             <div className="text-lg font-bold mb-2 relative z-10 px-10">
-                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
-                <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+                <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 not-light:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+                <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 not-light:text-neutral-100">
                     {title}
                 </span>
             </div>
-            <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+            <p className="text-sm text-neutral-600 not-light:text-neutral-300 max-w-xs relative z-10 px-10">
                 {description}
             </p>
         </div>

@@ -10,7 +10,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
   const projects = [
     {
       title: feturedProjects[0].heading,
-      description: (<div className="relative not-dark:max-md:text-white z-1 maxs-w-[19rem] ml-auto">
+      description: (<div className="relative light:max-md:text-white z-1 maxs-w-[19rem] ml-auto">
         <p className="text-sm font-normal mb-[2rem] text-n-3">
           {feturedProjects[0].text}
         </p>
@@ -34,7 +34,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
     {
       title: feturedProjects[1].heading,
       description:
-        (<div className="relative not-dark:max-md:text-white z-1 max-sw-[19rem] ml-auto">
+        (<div className="relative light:max-md:text-white z-1 max-sw-[19rem] ml-auto">
           <p className="text-sm font-normal mb-[3rem] text-n-3">
             {feturedProjects[1].text}
           </p>
@@ -49,7 +49,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
     {
       title: feturedProjects[2].heading,
       description:
-        (<div className="relative not-dark:max-md:text-white z-1 max-ws-[19rem] ml-auto">
+        (<div className="relative light:max-md:text-white z-1 max-ws-[19rem] ml-auto">
           <p className="text-sm font-normal mb-[2rem]">
             {feturedProjects[2].text}
           </p>

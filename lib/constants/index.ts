@@ -318,7 +318,7 @@ export const socials = [
   {
     id: "2",
     title: "My Github Profile",
-    iconUrl: "/socials/Github.svg",
+    iconUrl: "/socials/github.svg",
     size:18,
     url: "https://github.com/AnasAAhmed",
   },

@@ -80,7 +80,7 @@ const Hero = () => {
 
             <Gradient />
           </div>
-          <div className="not-dark:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          <div className="light:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <Image
               src={'/hero/hero-background.jpg'}
               className="w-full rounded-b-[400px]"
