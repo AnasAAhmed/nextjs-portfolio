@@ -19,7 +19,7 @@ export default function SplitText({
   mode = "words",
   className = "",
   itemClassName = "",
-  once = true,
+  once = false,
   amount = 0.3,
   duration = 0.3,
   delayPerItem = 0.04,
@@ -50,7 +50,7 @@ export default function SplitText({
             className={`inline-block will-change-transform ${itemClassName}`}
             initial={{ y, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once:false, amount }}
+            viewport={{ once, amount }}
             transition={{
               duration,
               ease: "easeOut",

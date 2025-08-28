@@ -34,7 +34,7 @@ export const HamburgerMenu = () => {
       <div className="absolute inset-0 opacity-[.03]">
         <img
           className="w-full h-full object-cover"
-          src={'/hero/robot.jpg'}
+          src={'/hero/robot.webp'}
           width={688}
           height={953}
           alt="Background"

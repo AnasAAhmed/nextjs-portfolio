@@ -10,28 +10,6 @@ export const metadata: Metadata = {
   title: "Anas Ahmed | Projects",
   description:
     "Projects of a full-stack web developer skilled in AI-Agents, Next.js, React, Node.js, MongoDB, PostgreSQL, and API integrations. Building scalable, high-performance web applications with modern technologies.",
-  keywords: [
-    "Anas Ahmed",
-    "Web Developer Portfolio",
-    "Full Stack Developer",
-    "Next.js Developer",
-    "React.js",
-    "FastApi",
-    "Python",
-    "Node.js",
-    "Ai Agents",
-    "Agentic AI",
-    "Frontend Developer",
-    "3d",
-    "UI/IX",
-    "MongoDB",
-    "PostgreSQL",
-    "API Integration",
-    "Vercel",
-    "Cdn & Backend Caching",
-    "RTK Query",
-    "Freelance Developer"
-  ],
   robots: {
     index: true,
     follow: true,

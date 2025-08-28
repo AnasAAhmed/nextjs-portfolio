@@ -4,7 +4,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
-import { Suspense,  useState, } from "react";
+import { Suspense, useState, } from "react";
 import { navigation } from "@/lib/constants";
 import Link from "next/link";
 import DarkModeToggle from "./Toggler";
@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full mb-5 z-30 bg-background/70 sm:border-b border-foreground/30 md:backdrop-blur-sm `}
+      className={`fixed top-0 left-0 w-full mb-5 z-30 text-foreground/90 bg-background/80 sm:border-b border-foreground/30 md:backdrop-blur-sm `}
     >
       <div className="flex items-center justify-between px-5 md:px-7.5 xl:px-10 max-md:py-2">
         <Link prefetch={false} className="flex items-center gap-2 uppercase font-bold text-xl w-2s4 xl:mr-8" href="/">
@@ -48,6 +48,7 @@ const Header = () => {
                 prefetch={false}
                 key={item.id}
                 title={item.title}
+                target={item.inNewTab ? '_blank' : ""}
                 href={item.url}
                 onClick={handleClick}
                 className={`hover:text-indigo-400 block relative text-2xl uppercase transition-colors ${item.onlyMobile ? "md:hidden" : ""

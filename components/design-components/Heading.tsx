@@ -4,14 +4,28 @@ import TagLine from "./Tagline";
 import { motion } from "framer-motion";
 
 const Heading = (
-  { hPosition = 'center', modeForSplit = 'words', className, title, text, tag }:
-    { hPosition?: 'end' | 'center' | 'start'; modeForSplit?: 'words' | 'chars'; className?: string, title: string, text?: string, tag?: string }) => {
+  { gap = 8,
+    hPosition = 'center',
+    modeForSplit = 'words',
+    hclassName = 'text-3xl font-normal fonts-semibold md:text-4xl lg:text-5xl',
+    pclassName,
+    title,
+    text,
+    tag }:
+    {
+      gap?: number;
+      hPosition?: 'end' | 'center' | 'start';
+      modeForSplit?: 'words' | 'chars';
+      hclassName?: string,
+      pclassName?: string,
+      title: string,
+      text?: string,
+      tag?: string
+    }) => {
   return (
     <motion.div
-      className={`${className} max-w-[50rem] mx-auto mb-8 lg:mb-16 md:tesxt-center`}
-      // initial={{ opacity: 0, y: 30 }}
-      // whileInView={{ opacity: 1, y: 0 }}
-      style={{ textAlign: hPosition }}
+      className='max-w-[50rem] flex flex-col mx-auto mb-8 lg:mb-16'
+      style={{ textAlign: hPosition, gap: gap }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
@@ -22,7 +36,7 @@ const Heading = (
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <TagLine className="mb-4 md:justify-center">{tag}</TagLine>
+          <TagLine className="md:justify-center">{tag}</TagLine>
         </motion.div>
       )}
 
@@ -30,7 +44,7 @@ const Heading = (
         <SplitText
           text={title}
           mode={modeForSplit}
-          className="text-3xl font-normal fonts-semibold md:text-4xl lg:text-5xl mb-6"
+          className={hclassName}
           itemClassName="mx-[1px]"           // slight spacing
           delayPerItem={0.03}
           duration={0.3}
@@ -40,7 +54,7 @@ const Heading = (
 
       {text && (
         <motion.p
-          className="body-2 mt-4 text-n-4"
+          className={pclassName}
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

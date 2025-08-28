@@ -79,7 +79,6 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
       id="features"
     >
       <Heading
-        className="pt-10 md:pt-5 xl:pt-0 text-center "
         title="What i have learned by making these complex real-world apps"
         text="From eCommerce to AI tools and social platforms, each project sharpened my skills in performance, SEO, UX, and scalability."
       />

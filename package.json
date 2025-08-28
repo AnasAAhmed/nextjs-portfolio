@@ -1,6 +1,7 @@
 {
   "name": "nextjs-portfolio",
   "version": "0.1.0",
+  "author": "Anas Ahmed",
   "private": true,
   "scripts": {
     "dev": "next dev",

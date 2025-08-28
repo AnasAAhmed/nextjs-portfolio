@@ -68,7 +68,7 @@ const Hero = () => {
 
               <div className="aspect-[33/40] rounded-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <Image
-                  src={'/hero/robot.jpg'}
+                  src={'/hero/robot.webp'}
                   className="w-full  scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   width={1024}
                   height={490}
@@ -82,7 +82,7 @@ const Hero = () => {
           </div>
           <div className="light:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <Image
-              src={'/hero/hero-background.jpg'}
+              src={'/hero/hero-background.webp'}
               className="w-full rounded-b-[400px]"
               width={1440}
               height={1800}

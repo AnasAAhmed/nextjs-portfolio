@@ -2,11 +2,13 @@ export const navigation = [
   {
     id: "0",
     title: "Home",
+    inNewTab:false,
     url: "/#hero",
     onlyMobile: false
   },
   {
     id: "1",
+    inNewTab:false,
     title: "Services",
     url: "/#services",
     onlyMobile: false
@@ -14,25 +16,36 @@ export const navigation = [
   {
     id: "2",
     title: "Skills",
+    inNewTab:false,
     url: "/#skills",
     onlyMobile: false
   },
   {
     id: "3",
     title: "Projects",
+    inNewTab:false,
     url: "/#projects",
     onlyMobile: false
   },
   {
     id: "4",
     title: "Education",
+    inNewTab:false,
     url: "/#timeline",
     onlyMobile: false
   },
   {
     id: "5",
     title: "Contact",
-    url: "mailto:anasahmedd244@gmail.com",
+    inNewTab:true,
+    url: "https://www.fiverr.com/users/anas_ahmed_24",
+    onlyMobile: false
+  },
+  {
+    id: "6",
+    title: "V2",
+    inNewTab:false,
+    url: "/v2",
     onlyMobile: false
   },
 ];
@@ -305,14 +318,14 @@ export const socials = [
     id: "0",
     title: "My Instagram",
     iconUrl: "/socials/instagram.png",
-    size:28,
+    size: 28,
     url: "#",
   },
-{
+  {
     id: "1",
     title: "My LinkedIn Profile",
     iconUrl: "/socials/LinkedIn.svg",
-    size:18,
+    size: 18,
     url: "https://www.linkedin.com/in/anas-ahmed-37258b319/",
   },
 ];
@@ -435,7 +448,7 @@ export const projects = [
     "url": "https://figma-giaic-hackathon-anas.vercel.app/",
     "category": "frontend-ui/ux",
   },
-   {
+  {
     "title": "Custom Complet eAuthentication System in Nextjs",
     "description": "A complete authentication system using NextAuth v5, supporting credentials, Google, and GitHub login. Built with scalable SSR logic and raw PostgreSQL queries using the Neon driver for high-performance authentication.",
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/be5338d53a31373bb704fec8e059b999-1755620392939/auth.png",
@@ -449,14 +462,14 @@ export const projects = [
     "url": "https://imagerator-ai.vercel.app",
     "category": "full-stack-with-ai",
   },
-   {
+  {
     "title": "3 AI Agents Weather Info Agent, Agent with Multiple Tools Smart, Customer Support Bot ",
     "description": "⚡ Continuing my AI journey with GIAIC (Thursday Evening, Sir Bibla Fareed’s class) I recently completed Assignments 4–6 and recorded a demo 🎥",
     "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE2xUUXUWlnZA/thumbnail-with-play-button-overlay-high/B4EZjWMkQxGwD0-/0/1755940289620?e=2147483647&v=beta&t=66GR_x5XEYsDFJREboVvLcfmhds3I9Nuv6rDYa2VejI",
     "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364947402035712001-JQ_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
     "category": "ai-agents-with-python",
   },
-   {
+  {
     "title": "More AI Agents Simple Agent(Chainlit & Python), Basic FAQ Agent, Math Function Tool Agent ",
     "description": "⏳ Sometimes deadlines push us to discover what we’re capable of. This week, I had to complete 6 assignments in a single day for GIAIC",
     "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE1s60kGLnh5A/thumbnail-with-play-button-overlay-high/B4EZjS3P9BGoD0-/0/1755884378918?e=2147483647&v=beta&t=9ZJAhtCz2x7UozSzD3mcdivx8gCeThP_Kst4pCn4lfg",

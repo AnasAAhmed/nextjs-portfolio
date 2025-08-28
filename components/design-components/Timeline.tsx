@@ -1,10 +1,8 @@
 import React from 'react'
 import Section from './Section'
 import { Timeline } from '../ui/timeline'
-import { Calendar, Award, BookOpen, Code, Server, Brain, Bot, Layers, LucideIcon } from "lucide-react";
+import { BookOpen, Server, Brain, Bot, Layers } from "lucide-react";
 import EducationItem from './design/TimelineContent';
-import { GradientLight, GradientLightLeft } from './design/Benefits';
-import Heading from './Heading';
 
 
 const TimelineSection = () => {
@@ -13,7 +11,7 @@ const TimelineSection = () => {
       title: 'Late 2023 - Present',
       content: (
         <EducationItem
-          logo="https://portal.governorsindh.com/_next/static/media/giaic.9ff76f62.png"
+          logo="/giaic.png"
           institution="Governor Sindh Initiative for GenAI, Web3, and Metaverse"
           field="Computer Science"
           date="Feb 2024 - Present"

@@ -16,7 +16,6 @@ const Benefits = () => {
       id="services">
       <div className="container max-sm:pb-12 pt-12 lg:pt-0 relative z-2">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
           modeForSplit='chars'
           title="Services"
         />

@@ -6,6 +6,7 @@ import {
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import Heading from "../design-components/Heading";
+import SplitText from "./split-text";
 
 interface TimelineEntry {
   title: string;
@@ -52,15 +53,27 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="h-10 absolute left-0s lg:left-3 w-10 rounded-full bg-white not-light:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 not-light:bg-neutral-800 border border-neutral-300 not-light:border-neutral-700 p-2" />
               </div>
-              <h6 className="hidden lg:block text-xl lg:pl-20 md:text-3xl font-bold text-neutral-500 not-light:text-neutral-500 ">
-                {item.title}
-              </h6>
+              <SplitText
+                text={item.title}
+                mode="words"
+                className="hidden lg:block text-xl lg:pl-20 md:text-3xl font-bold text-neutral-500 not-light:text-neutral-500 "
+                // itemClassName="mx-[1px]"
+                delayPerItem={0.03}
+                duration={0.3}
+                y={12}
+              />
             </div>
 
             <div className="relative pl-3 pzr-4 lg:pl-4 w-full">
-              <h6 className="lg:hidden pl-10 block text-2xl mb-4 text-left font-bold text-neutral-500 not-light:text-neutral-500">
-                {item.title}
-              </h6>
+              <SplitText
+                text={item.title}
+                mode="chars"
+                className="lg:hidden pl-10 block text-2xl mb-4 text-left font-bold text-neutral-500 not-light:text-neutral-500"
+                // itemClassName="mx-[1px]"
+                delayPerItem={0.03}
+                duration={0.3}
+                y={12}
+              />
               {item.content}{" "}
             </div>
           </div>
