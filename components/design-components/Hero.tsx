@@ -58,13 +58,13 @@ const Hero = () => {
             Hire Me
           </Button>
         </div>
-        <div className="relative max-sw-[23rem] mx-auto md:max-w-5xl ">
+        <div className="relative max-sw-[23rem] mx-auto md:max-w-5sxl ">
           <div className="relative z-1 p-1 rounded-2xl bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)]">
             <div className="relative bg-[#19142b] rounded-[1rem]">
               <div className="rounded-[0.9rem] overflow-hidden">
                 <Image
                    src="/code.webp"
-                  className="w-full object-cover"
+                  className="w-full aspect-[4/3] sm:aspect-[16/9] object-cover"
                   width={1024}
                   height={490}
                   loading="eager"

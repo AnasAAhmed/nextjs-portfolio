@@ -56,7 +56,7 @@ function Page() {
             <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 not-light:bg-neutral-800/80">
                 <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
             </div>
-            <div className="px-4 flex flex-col items-center space-ys-3 py-10 md:py-20 text-center">
+            <div className="flex flex-col items-center space-ys-3 py-10 md:py-20 text-center">
                 <h1 className="sr-only relative mb-4 z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl not-light:text-slate-300">
                     Hi I am Anas Ahmed <br /> A Full Stack Developer
                 </h1>
