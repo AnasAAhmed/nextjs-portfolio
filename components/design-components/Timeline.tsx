@@ -105,7 +105,7 @@ const TimelineSection = () => {
       title: '2021 - 2023',
       content: (
         <EducationItem
-          logo="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqoOAhs2vhlZ1goYhs6R8UOPnP2AgYdRfTI3j2lCTFxKQeUlZTXrqj_tUoxQd-rfbRlgTvE3iBYxMjhd6uFGHkKy497PAxeCt_dvDO1lkvbN-6Z2L7RoPYdLawQ_It9PjZZml5wPw=s680-w680-h510-rw"
+          logo="/college.webp"
           institution="S.M. College Karachi"
           field="Intermediate, Business/Commerce, General"
           date="Jun 2021 - Nov 2023"

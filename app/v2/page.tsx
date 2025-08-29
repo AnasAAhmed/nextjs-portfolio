@@ -15,37 +15,37 @@ import { Metadata } from "next";
 export const dynamic = 'force-static'
 
 export const metadata: Metadata = {
-  title: "Anas Ahmed Portfolio V2",
-  description:
-    "A full-stack web developer skilled in AI-Agents, Next.js, React, Node.js, MongoDB, PostgreSQL, and API integrations. Building scalable, high-performance web applications with modern technologies.",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-  openGraph: {
-      title: "Anas Ahmed Portfolio V2",
+    title: "Anas Ahmed Portfolio V2",
     description:
-      "Discover Anas Ahmed’s portfolio v2 showcasing projects in Next.js, React, Node.js, Python, MongoDB/PostgresSql/MySql, and scalable web development solutions.",
-    url: `https://anasahmed-portfolio.vercel.app/v2`,
-    images: [
-      {
-        url: "/v2.webp",
-        width: 1200,
-        height: 630,
-        alt: "v2 hero preview",
-      }
-    ],
-    siteName: "Anas Ahmed | Portfolio",
-  },
+        "A full-stack web developer skilled in AI-Agents, Next.js, React, Node.js, MongoDB, PostgreSQL, and API integrations. Building scalable, high-performance web applications with modern technologies.",
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+        },
+    },
+    openGraph: {
+        title: "Anas Ahmed Portfolio V2",
+        description:
+            "Discover Anas Ahmed’s portfolio v2 showcasing projects in Next.js, React, Node.js, Python, MongoDB/PostgresSql/MySql, and scalable web development solutions.",
+        url: `https://anasahmed-portfolio.vercel.app/v2`,
+        images: [
+            {
+                url: "/v2.webp",
+                width: 1200,
+                height: 630,
+                alt: "v2 hero preview",
+            }
+        ],
+        siteName: "Anas Ahmed | Portfolio",
+    },
 };
 
 function Page() {
     return (
-        <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
+        <div className="relative mx-auto my-10 px-4 flex max-w-7xl flex-col items-center justify-center">
             {/* <Navbar /> */}
             <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 not-light:bg-neutral-800/80">
                 <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
@@ -57,38 +57,17 @@ function Page() {
                 <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
             </div>
             <div className="px-4 flex flex-col items-center space-ys-3 py-10 md:py-20 text-center">
-                <SplitText
-                    text="Hi I am Anas Ahmed A Full Stack Developer"
-                    mode="words"
-                    className="relative self-center z-10 mx-auto max-w-4xl  text-2xl font-bold text-slate-700 md:text-4xl lg:text-6xl not-light:text-slate-300"
-                    itemClassName="mx-[1px]"           // slight spacing
-                    delayPerItem={0.03}
-                    duration={0.3}
-                    y={12}
-                />
                 <h1 className="sr-only relative mb-4 z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl not-light:text-slate-300">
                     Hi I am Anas Ahmed <br /> A Full Stack Developer
                 </h1>
                 <UiHero />
-            </div>
-            <div id="service" className="px-8">
-                <h6 className="sr-only text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black not-light:text-white">
-                    Packed with thousands of features
-                </h6>
-                <p className="sr-only">From Image generation to video generation, Everything AI has APIs for
-                    literally everything. It can even create this website copy for you.</p>
-                <Heading
-                    title=" Packed with thousands of features"
-                    text="From Image generation to video generation, Everything AI has APIs for
-                    literally everything. It can even create this website copy for you."
-                />
             </div>
             <FeaturesSectionDemo />
             <TimelineDemo />
             <FeaturedProjects crosses={false} />
             <Projects crosses={false} data={projects} />
             <GlowingEffectDemo />
-            <Testimonial isCrosses={false}/>
+            <Testimonial isCrosses={false} />
         </div>
     );
 }
@@ -238,29 +217,29 @@ function GlowingEffectDemo() {
             <GridItem
                 area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
                 icon={<Settings className="h-4 w-4 text-black not-light:text-neutral-400" />}
-                title="The best AI code editor ever."
+                title="The best Web Developer ever."
                 description="Yes, it's true. I'm not even kidding. Ask my mom if you don't believe me."
             />
 
             <GridItem
                 area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
                 icon={<Lock className="h-4 w-4 text-black not-light:text-neutral-400" />}
-                title="You should buy Aceternity UI Pro"
+                title="You should buy my Service at fiverr."
                 description="It's the best money you'll ever spend"
             />
 
             <GridItem
                 area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
                 icon={<Sparkles className="h-4 w-4 text-black not-light:text-neutral-400" />}
-                title="This card is also built by Cursor"
-                description="I'm not even kidding. Ask my mom if you don't believe me."
+                title="This card is also built by me"
+                description="I'm kidding. Ask my mom if you don't believe me."
             />
 
             <GridItem
                 area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
                 icon={<Search className="h-4 w-4 text-black not-light:text-neutral-400" />}
-                title="Coming soon on Aceternity UI"
-                description="I'm writing the code as I record this, no shit."
+                title="Coming soon on Upwork"
+                description="I'm writing the code as I record this."
             />
         </ul>
     );
@@ -278,7 +257,7 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
         <li className={`min-h-[14rem] list-none ${area}`}>
             <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
                 <GlowingEffect
-                    spread={40}
+                    spread={90}
                     glow={true}
                     disabled={false}
                     proximity={64}
@@ -306,43 +285,40 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
 function FeaturesSectionDemo() {
     const features = [
         {
-            title: "Built for developers",
-            description:
-                "Built for engineers, developers, dreamers, thinkers and doers.",
+            title: "Frontend Development",
+            description: "I build responsive, visually appealing, and high- performing user interfaces using modern technologies like HTML, CSS, JavaScript, React, and Next.js.",
             icon: <Terminal />,
         },
         {
-            title: "Ease of use",
+            title: "Full-Stack Development",
             description:
-                "It's as easy as using an Apple, and as expensive as buying one.",
+                "From database design to deployment, I create complete web applications with both robust backend functionality and sleek frontend experiences.",
             icon: <LampWallDown />,
         },
         {
-            title: "Pricing like no other",
-            description:
-                "Our prices are best in the market. No cap, no lock, no credit card required.",
+            title: "API Integration, Optimization, Fast Speed and Caching",
+            description: "I integrate and optimize APIs for maximum performance, ensuring fast data fetching and implementing caching strategies to reduce load times.",
             icon: <DollarSign />,
         },
         {
-            title: "100% Uptime guarantee",
-            description: "We just cannot be taken down by anyone.",
+            title: "AI SDK's and Chatbot Integration",
+            description: "I connect AI SDKs and chatbots to your platform, enabling automated responses, enhanced customer service.",
             icon: <Cloud />,
         },
         {
-            title: "Multi-tenant Architecture",
-            description: "You can simply share passwords instead of buying new seats",
+            title: "AI Agents & Automation with Litellm & langraph",
+            description: "I build AI agents and automation workflows using Litellm and LangGraph to streamline processes.",
             icon: <Route />,
         },
         {
-            title: "24/7 Customer Support",
-            description:
-                "We are available a 100% of the time. Atleast our AI Agents are.",
+            title: "CDN-Caching and Hosting Guide",
+            description: "I provide guidance on setting up CDN caching and choosing the right hosting solutions.",
             icon: <HelpCircle />,
         },
         {
             title: "Money back guarantee",
             description:
-                "If you donot like EveryAI, we will convince you to like us.",
+                "If you donot like Services, we will convince you to like us.",
             icon: <Settings2 />,
         },
         {
@@ -352,11 +328,23 @@ function FeaturesSectionDemo() {
         },
     ];
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
-            {features.map((feature, index) => (
-                <Feature key={feature.title} {...feature} index={index} />
-            ))}
-        </div>
+        <>
+            <div id="service" className="px-8 mt-10">
+                <h6 className="sr-only text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black not-light:text-white">
+                    Packed with multiple features
+                </h6>
+                <p className="sr-only">From frontend to backend development, Everything with AI development and Integration.</p>
+                <Heading
+                    title=" Packed with multiple features"
+                    text="From full stack development, Caching, AI to Hosting."
+                />
+            </div>
+            <div className="grid grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+                {features.map((feature, index) => (
+                    <Feature key={feature.title} {...feature} index={index} />
+                ))}
+            </div>
+        </>
     );
 }
 

@@ -52,7 +52,7 @@ const Header = () => {
                 href={item.url}
                 onClick={handleClick}
                 className={`hover:text-indigo-400 block relative text-2xl uppercase transition-colors ${item.onlyMobile ? "md:hidden" : ""
-                  } px-2 lg:px-6 py-6 md:py-6 md:-mr-0.25 md:text-xs md:font-semibold md:leading-5 lg:hover:text-n-1 `}>
+                  } px-2 lg:px-6 py-3 md:py-6 md:-mr-0.25 md:text-xs md:font-semibold md:leading-5 lg:hover:text-n-1 `}>
                 {item.title}
               </Link>
             ))}

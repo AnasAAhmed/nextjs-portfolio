@@ -1,18 +1,27 @@
 import React from "react";
 import Section from "./Section";
 import { socials } from "@/lib/constants";
-import { BriefcaseBusiness, Github } from "lucide-react";
+import { BriefcaseBusiness, Github, LucideBriefcase } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <Section crosses customPaddings="s" className="px-0 !py-2">
       <div className="container flex sm:justify-between justify-center items-center gap-5 max-sm:flex-col">
-        <p className="caption text-n-4 lg:block">
+        <p className="max-sm:text-center">
           Anas Ahmed © {new Date().getFullYear()} <br /> <a href="mailto:anasahmedd244@gmail.com">anasahmedd244@gmail.com</a>
         </p>
 
         <div className="flex gap-5 flex-wrap items-center">
 
+          <Link
+            prefetch
+            title={'Portfolio v2'}
+            href={'/v2'}
+            className="flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full transition-colors hover:bg-n-6"
+          >
+            <LucideBriefcase size={'18px'} color="black" />
+          </Link>
           {socials.map((item) => (
             <a
               key={item.id}

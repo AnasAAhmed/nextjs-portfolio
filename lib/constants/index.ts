@@ -47,14 +47,6 @@ export const navigation = [
     url: "https://www.fiverr.com/users/anas_ahmed_24",
     onlyMobile: false
   },
-  {
-    id: "6",
-    title: "V2",
-    prefetch:true,
-    inNewTab:false,
-    url: "/v2",
-    onlyMobile: false
-  },
 ];
 
 export const heroIcons = ['/home-smile.svg', '/file-02.svg', '/search-md.svg', '/plus-square.svg'];

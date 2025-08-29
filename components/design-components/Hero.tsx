@@ -16,9 +16,6 @@ const Hero = () => {
       id="hero"
     >
       <div className="container pb-10 mt-1 sm:mt-20 md:mt-30 relative " >
-        {/* <GradientRight /> */}
-        {/* <GradientLeft/> */}
-
         <div className="relative z-1 max-w-[76rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="text-4xl font-semibold md:texts-4xl lg:text-7xl mbf-6">
             Hi, <br /> i am
@@ -53,25 +50,24 @@ const Hero = () => {
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js.
             Currently expanding my expertise in <strong>Agentic AI</strong> and Web&nbsp;3.0.
           </p>
-          <Button title="Dont need to download, Just View in a tab" inNewTab href="/anas-ahmed-resume.pdf" white className="mr-3">
+          <Button white title="Dont need to download, Just View in a tab" inNewTab href="/anas-ahmed-resume.pdf" className="mr-3">
             View Resume
           </Button>
-          <br className="sm:hidden"/>
+          <br className="sm:hidden" />
           <Button className="max-sm:mt-4" inNewTab href="https://www.fiverr.com/users/anas_ahmed_24?utm_source=anas_portfolio&utm_medium=website&utm_campaign=anas_portfolio_cta&utm_content=skill_button" >
             Hire Me
           </Button>
         </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl ">
-          <div className="relative z-1 p-0.5 rounded-2xl bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)]">
+        <div className="relative max-sw-[23rem] mx-auto md:max-w-5xl ">
+          <div className="relative z-1 p-1 rounded-2xl bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)]">
             <div className="relative bg-[#19142b] rounded-[1rem]">
-              {/* <div className="h-[1.4rem] bg-[#0E0C15] rounded-t-[0.9rem]" /> */}
-
-              <div className="aspect-[33/40] rounded-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+              <div className="rounded-[0.9rem] overflow-hidden">
                 <Image
-                  src={'/hero/robot.webp'}
-                  className="w-full  scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+                   src="/code.webp"
+                  className="w-full object-cover"
                   width={1024}
                   height={490}
+                  loading="eager"
                   alt="AI"
                 />
                 <Parallax />
@@ -80,15 +76,16 @@ const Hero = () => {
 
             <Gradient />
           </div>
-          <div className="light:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          {/* <div className="light:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <Image
-              src={'/hero/hero-background.webp'}
+              src={'/code2.webp'}
               className="w-full rounded-b-[400px]"
               width={1440}
               height={1800}
+              loading="eager"
               alt="hero"
             />
-          </div>
+          </div> */}
 
           <BackgroundCircles />
         </div>
