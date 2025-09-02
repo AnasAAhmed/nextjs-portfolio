@@ -4,6 +4,7 @@ import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient, Parallax } from "./design/Hero";
 import Image from "next/image";
 import SplitText from "../ui/split-text";
+import { SplitText2 } from "../ui/split-text-ssr";
 
 const Hero = () => {
 
@@ -27,7 +28,7 @@ const Hero = () => {
           <h2 className="sr-only text-2xl font-semibold md:text-3xl lg:text-4xl mb-s6">
             A Full Stack Developer
           </h2>
-          <SplitText
+          <SplitText2
             text="A Full Stack Developer"
             mode="words"
             className="text-xl font-semibold md:text-2xl lg:text-4xl mb-3 sm:mb-6"
@@ -35,15 +36,18 @@ const Hero = () => {
             delayPerItem={0.03}
             duration={0.3}
             y={12}
+            // useWhileInView={false}
           />
-          <SplitText
+          <SplitText2
             text=" I craft responsive, high-performance web applications using Next.js, React.js, and Node.js. Currently expanding my expertise in Agentic AI and Web 3.0."
             mode="words"
             className="max-w-4xl max-md:hidden font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px] "
             itemClassName="mx-[1px]"           // slight spacing
-            delayPerItem={0.03}
+            delayPerItem={0.02}
+            
             duration={0.2}
             y={7}
+            // useWhileInView={false}
           />
           <br />
           <p style={{ fontWeight: '400' }} className="md:sr-only max-w-4xl mx-auto mb-6 text-sm md:text-lg lg:text-xl  lg:mb-8">
@@ -58,15 +62,15 @@ const Hero = () => {
             Hire Me
           </Button>
         </div>
-        <div className="relative max-sw-[23rem] mx-auto md:max-w-5sxl ">
+        <div className="relative mx-auto md:max-w-6xl ">
           <div className="relative z-1 p-1 rounded-2xl bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)]">
             <div className="relative bg-[#19142b] rounded-[1rem]">
               <div className="rounded-[0.9rem] overflow-hidden">
                 <Image
                    src="/code.webp"
                   className="w-full aspect-[4/3] sm:aspect-[16/9] object-cover"
-                  width={1024}
-                  height={490}
+                  width={1224}
+                  height={890}
                   loading="eager"
                   alt="AI"
                 />
@@ -78,7 +82,7 @@ const Hero = () => {
           </div>
           {/* <div className="light:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <Image
-              src={'/code2.webp'}
+              src={'/hero/hero-background.webp'}
               className="w-full rounded-b-[400px]"
               width={1440}
               height={1800}
@@ -98,3 +102,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

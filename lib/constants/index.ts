@@ -4,7 +4,7 @@ export const navigation = [
     title: "Home",
     inNewTab:false,
     prefetch:false,
-    url: "/#hero",
+    url: "/",
     onlyMobile: false
   },
   {
@@ -384,12 +384,49 @@ export const projects = [
     "url": "https://anas-social.vercel.app",
     "category": "full-stack",
   },
-  {
-    "title": "Imaginify - AI-powered image editing",
-    "description": "Transform your images with AI: generative fill, object removal, background removal, and color changes, powered by Cloudinary AI.",
-    "image": "https://imagerator-ai.vercel.app/assets/images/hero.webp",
-    "url": "https://imagerator-ai.vercel.app/",
+   {
+    "title": "Imaginify - AI-powered image editing in Nextjs",
+    "description": "image-ai-toolkit: An advanced image editing app with AI-powered object removal, color modification, resolution enhancement, and image extension. Includes Cloudinary SDK for efficient image search and management. Built for seamless user experience.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/58cb5a18afaae92c5f06334617c32a5d-1755621301804/imagerator.png",
+    "url": "https://imagerator-ai.vercel.app",
     "category": "full-stack-with-ai",
+  },
+ {
+     "title": 'Web Search Agent - Input & Output Guardrials Agent - Dynaic Instructions Agent',
+    "description": '🚀 Advancing in my AI learning path with GIAIC (Thursday Evening, guided by Sir Bilal Fareed)!\n' +
+      '\n' +
+      'This time I worked on Assignments 7–9, exploring some advanced concepts in AI agent development. I’ve shared images of my work below 📸\n' +
+      '7️⃣ Custom Web Search Tool – Integrated the Gemini API with Tavily API to enable web-powered responses.\n' +
+      ' 8️⃣ Guardrails for Input & Output – Implemented safeguards to filter/reshape inputs and outputs for safe and reliable interactions.\n' +
+      ' 9️⃣ Dynamic Instructions – Converted static agent instructions into dynamic instructions, making the agent more adaptive to context.\n' +
+      '\n' +
+      'These tasks really helped me understand how to make AI agents smarter, safer, and more flexible. Step by step, it’s starting to feel like building real-world applications 💡\n' +
+      '\n' +
+      '#AI #Gemini #Tavily #OpenAI #Guardrails #GIAIC #LearningByDoing #python #AgenticAi #AiAgent #GiaicAssignments',
+    "image": 'https://media.licdn.com/dms/image/v2/D4E22AQEFdCNIkQTM2w/feedshare-shrink_800/B4EZjhTD.SHgAk-/0/1756126530161?e=2147483647&v=beta&t=TUtYNc3IJT2XuJvZ-4KWEtfuHodEgIJAzZprjOfNnl8',
+    "url": 'https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-gemini-tavily-activity-7365728541142917120-vX2r?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E',
+    "category": "ai-agents-with-python",
+  },
+  {
+  "title": "13 Pages Full Stack Ecommerce Dashboard in Reactjs, OAuth, Optimize Aggregate DB Quries For Scalability",
+  "description": "Developed with Reactjs, OAuth, Recharts, Mongodb, Optimize Mongoose Aggregate DB Quries, (Login Required to visit to dashborad as a visitor).",
+  "image": "/dash2.png",
+  "url": "https://ecommerce-ahmed.vercel.app/",
+  "category": "full-stack-dashboard",
+},
+   {
+    "title": "3 AI Agents Weather Info Agent, Agent with Multiple Tools Smart, Customer Support Bot ",
+    "description": "⚡ Continuing my AI journey with GIAIC (Thursday Evening, Sir Bibla Fareed’s class) I recently completed Assignments 4–6 and recorded a demo 🎥",
+    "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE2xUUXUWlnZA/thumbnail-with-play-button-overlay-high/B4EZjWMkQxGwD0-/0/1755940289620?e=2147483647&v=beta&t=66GR_x5XEYsDFJREboVvLcfmhds3I9Nuv6rDYa2VejI",
+    "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364947402035712001-JQ_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
+    "category": "ai-agents-with-python",
+  },
+  {
+    "title": "Pic-share Image Gallery with OAuth",
+    "description": "A Pinterest-inspired image-sharing platform built with React.js and Sanity. Features Google OAuth authentication, seamless Sanity image management, and a visually rich user experience.",
+    "image": "https://dms.licdn.com/playlist/vid/v2/D4D05AQFFImiyaJqcwQ/thumbnail-with-play-button-overlay-high/B4DZXnNb3LHwDI-/0/1743340840748?e=2147483647&v=beta&t=GJ_6C81R8ONcqONLxWOySWVCPokzZA2fEmGJkYteIGU",
+    "url": "https://pic-share-anas.netlify.app/",
+    "category": "full-stack-sanity-cms",
   },
   {
     "title": "Figma clone with Fabric.js, Liveblocks",
@@ -413,20 +450,6 @@ export const projects = [
     "category": "frontend-ui/ux",
   },
   {
-    "title": "ImageWrite.ai, Image to text and chatbot in python",
-    "description": "ImageWrite AI is a smart web app that allows users to extract text from images using OCR (Optical Character Recognition) and then interact with that text using an AI-powered chatbot. Designed for students, researchers, and professionals, the tool makes it easy to digitize physical notes or documents and instantly generate summaries, explanations, or answers to related questions.",
-    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/f7a03500157b877cb25c539d0ea07e6f-1755611113088/streamlit-ai.png",
-    "url": "https://imagewrite-anas-giaic.streamlit.app",
-    "category": "python-with-ai",
-  },
-  {
-    "title": "3D Personal Portfolio with Three.js, Reactjs",
-    "description": "A 3D portfolio featuring smooth animations, interactive elements, and an immersive user experience.",
-    "image": "https://utfs.io/f/d78048ea-c332-419d-b619-a9155b4cd31a-palkka.png",
-    "url": "https://anas3d.netlify.app",
-    "category": "frontend-3d",
-  },
-  {
     "title": "iNotebook Save & secure your note on cloud",
     "description": "Develope with mern stack iNotebook provides you cloud notebook to save your personal notes.",
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/2a5065afac802fd0f23eda1494627227-1755614720839/Screenshot%20(245).png",
@@ -434,46 +457,55 @@ export const projects = [
     "category": "full-stack",
   },
   {
-    "title": "Figma Design To Code in 24hrs for hackathon",
+    "title": "7+ pages Ecommerce Figma Design To Code in 24hrs for hackathon",
     "description": "Hackhaton (GIAIC) project Using Nextjs,Node.js, dynamic product page, SSR, ISR,SSG & CSR.",
     "image": "https://s3-alpha.figma.com/hub/file/3191449246/22f98b38-ccd9-4dbf-80c1-41d6ee983dc0-cover.png",
     "url": "https://figma-ecommerce-anas-giaic.vercel.app/",
     "category": "frontend-ui/ux",
   },
   {
-    "title": "Figma Design To Code in 24hrs for hackathon",
+    "title": "Admin Dashboard(Different Instance) in Reactjs Powered Nextjs store backend",
+  "description": "An admin dashboard for managing the eCommerce store with single bacnkend and Auth sysytem for both store & Dashborad with two seperate frontends, built with Next.js. Includes store HomePage content & SEO customization, product, order, and user management with secure authentication and real-time updates.",
+  "image": "/dash.png",
+  "url": "https://ecom-admin-panel-xcw7-gh8p.vercel.app/",
+  "category": "full-stack-dashboard",
+},
+  {
+    "title": "5+ pages Figma Design To Code in 24hrs for hackathon",
     "description": "This project is part of GIAIC hackathon Figma to Nextjs project in 24hrs we were given 5 pages figma design to convert it in 24 hrs with best practice this the the final project after implementing best rendering strategies of vercel CDN Caching dynamic products and thier SEO with mock Data Streaming rendering for long dynamic pages this is nit just the simple frontend project",
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/55b44b309b24f66ad3949c66206b4cf6-1755615941475/24hrs-giaic.png",
     "url": "https://figma-giaic-hackathon-anas.vercel.app/",
     "category": "frontend-ui/ux",
   },
   {
-    "title": "Custom Complet eAuthentication System in Nextjs",
+    "title": "Custom Complete Authentication System in Nextjs",
     "description": "A complete authentication system using NextAuth v5, supporting credentials, Google, and GitHub login. Built with scalable SSR logic and raw PostgreSQL queries using the Neon driver for high-performance authentication.",
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/be5338d53a31373bb704fec8e059b999-1755620392939/auth.png",
     "url": "https://next-auth-anas.vercel.app",
     "category": "full-stack",
   },
   {
-    "title": "Imaginify - AI-powered image editing in Nextjs",
-    "description": "image-ai-toolkit: An advanced image editing app with AI-powered object removal, color modification, resolution enhancement, and image extension. Includes Cloudinary SDK for efficient image search and management. Built for seamless user experience.",
-    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/58cb5a18afaae92c5f06334617c32a5d-1755621301804/imagerator.png",
-    "url": "https://imagerator-ai.vercel.app",
-    "category": "full-stack-with-ai",
+    "title": "ImageWrite.ai, Image to text and chatbot in python",
+    "description": "ImageWrite AI is a smart web app that allows users to extract text from images using OCR (Optical Character Recognition) and then interact with that text using an AI-powered chatbot. Designed for students, researchers, and professionals, the tool makes it easy to digitize physical notes or documents and instantly generate summaries, explanations, or answers to related questions.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/f7a03500157b877cb25c539d0ea07e6f-1755611113088/streamlit-ai.png",
+    "url": "https://imagewrite-anas-giaic.streamlit.app",
+    "category": "python-with-ai",
   },
-  {
-    "title": "3 AI Agents Weather Info Agent, Agent with Multiple Tools Smart, Customer Support Bot ",
-    "description": "⚡ Continuing my AI journey with GIAIC (Thursday Evening, Sir Bibla Fareed’s class) I recently completed Assignments 4–6 and recorded a demo 🎥",
-    "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE2xUUXUWlnZA/thumbnail-with-play-button-overlay-high/B4EZjWMkQxGwD0-/0/1755940289620?e=2147483647&v=beta&t=66GR_x5XEYsDFJREboVvLcfmhds3I9Nuv6rDYa2VejI",
-    "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364947402035712001-JQ_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
-    "category": "ai-agents-with-python",
-  },
+  
+  
   {
     "title": "More AI Agents Simple Agent(Chainlit & Python), Basic FAQ Agent, Math Function Tool Agent ",
     "description": "⏳ Sometimes deadlines push us to discover what we’re capable of. This week, I had to complete 6 assignments in a single day for GIAIC",
     "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE1s60kGLnh5A/thumbnail-with-play-button-overlay-high/B4EZjS3P9BGoD0-/0/1755884378918?e=2147483647&v=beta&t=9ZJAhtCz2x7UozSzD3mcdivx8gCeThP_Kst4pCn4lfg",
     "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364712929780269056-Y99G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
     "category": "ai-agents-with-python",
+  },
+  {
+    "title": "3D Personal Portfolio with Three.js, Reactjs",
+    "description": "A 3D portfolio featuring smooth animations, interactive elements, and an immersive user experience.",
+    "image": "https://utfs.io/f/d78048ea-c332-419d-b619-a9155b4cd31a-palkka.png",
+    "url": "https://anas3d.netlify.app",
+    "category": "frontend-3d",
   },
   //  {
   //   "title": "Imaginify - AI-powered image editing in Nextjs",

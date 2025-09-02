@@ -42,11 +42,11 @@ export default function SearchControls({ categories }: { categories: string[] })
   }, [category, router]);
 
   return (
-    <div className="flex gap-2 pt-14 md:pt-20 lg:pt-5 xl:pt-0 my-6">
+    <div className="flex flex-wrap gap-2 pt-14 md:pt-20 lg:pt-5 xl:pt-0 my-6">
       <select
         value={category}
         onChange={(e) => setCategory(e.target.value)}
-        className="border p-2 rounded outline-none bg-primary-foreground text-primary"
+        className="border max-sm:w-full p-2 rounded outline-none bg-primary-foreground text-primary"
       >
         <option value="">All Categories</option>
         {categories.map((c) => (
@@ -61,7 +61,7 @@ export default function SearchControls({ categories }: { categories: string[] })
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search by title..."
-        className="border p-2 rounded flex-1"
+        className="border max-sm:w-full p-2 rounded flex-1"
       />
     </div>
   );

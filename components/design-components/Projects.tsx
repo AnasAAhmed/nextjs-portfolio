@@ -46,66 +46,55 @@ const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectTy
                     title="Projects"
                 // text="Brainwave unlocks the potential of AI-powered applications"
                 />
-                <Carousel className="w-full max-w-6xl">
-                    <CarouselContent className="flex items-center">
-                        {data &&
-                            data.map((proj, index) => (
-                                <CarouselItem
-                                    key={index}
+                <div className="container pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center mt-10 spasce-y-10 text-center">
+                    {data.map((proj: any, index: number) => (
+                        <div
+                            key={index}
+                            className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
+                        >
+                            <div
+                                className={`relatsive hovser:scale-105 w-full sm:aspect-[6/4] ssm:h-[1s65px] md:h-s[275px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
+                            >
+                                <img
+                                    src={proj.image}
+                                    alt={proj.title}
+                                    title={proj.description}
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+                            <h3
+                                title={proj.title}
+                                className="text-sm 2xl:text-lg line-clamp-1 max-sw-80 font-medium mt-4 mx-auto"
+                            >
+                                {proj.title}
+                            </h3>
+                            <p
+                                title={proj.description}
+                                className="text-[12px] 2xl:text-[16px] text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
+                            >
+                                {proj.description}
+                            </p>
+                            <Link
+                                prefetch={false}
+                                href={'/projects?category=' + proj.category}
+                                title={"See all "+proj.category+' Projects'}
+                                className="text-sm uppercase rounded-2xl bg-secondary border px-2 text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
+                            >
+                                {proj.category.replace(/-/g, " ")}
+                            </Link>
+                            {
+                                proj.url &&
+                                <div className=' bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)] p-[0.1rem] rounded-md'>
+                                    <Link target="_blank" className=' bg-primary-foreground px-2 py-1 flex rounded-md items-center gap-2' href={proj.url} title={proj.title + " Live Demo"} >
+                                        Live Demo <ExternalLink />
+                                    </Link>
+                                </div>
+                            }
+                        </div>
+                    ))
+                    }
 
-                                    className="sm:!basis-auto flex-shrsink-0 w-[350px] sm:w-[600px] transition-transform duration-300 ease-in-out flex flex-col justify-center items-center"
-                                >
-                                    <div
-                                        className={`bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)] border p-[2px] relative mx-auto transition-all duration-300 ease-in-out rounded-lg overflow-hidden`}
-                                    >
-                                        <img
-                                            src={proj.image}
-                                            alt={proj.title}
-                                            title={proj.description}
-                                            className="border object-cover rounded-lg w-full h-[300px]"
-                                        />
-                                    </div>
-                                    <h6
-                                        title={proj.title}
-                                        className="text-lg line-clamp-2 max-w-96 font-medium mt-4 mx-auto"
-                                    >
-                                        {proj.title}
-                                    </h6>
-                                    <p
-                                        title={proj.description}
-                                        className="text-sm text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
-                                    >
-                                        {proj.description}
-                                    </p>
-                                    {proj.category && <p
-                                        title={proj.category}
-                                        className="text-sm rounded-2xl bg-secondary border px-2 text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
-                                    >
-                                        {proj.category.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase())}
-                                    </p>}
-                                    {proj.url && (
-                                        <div className="bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)] p-[0.1rem] rounded-md">
-                                            <Link
-                                                target="_blank"
-                                                className="bg-primary-foreground px-2 py-1 flex rounded-md items-center gap-2"
-                                                href={proj.url}
-                                                title={proj.title + ' Live Demo'}
-                                            >
-                                                Live Demo <ExternalLink />
-                                            </Link>
-                                        </div>
-                                    )}
-                                </CarouselItem>
-                            ))}
-                    </CarouselContent>
-
-                    {/* <div className="cursor-pointer" onClick={handlePrev}> */}
-                    <CarouselPrevious />
-                    {/* </div> */}
-                    {/* <div className="cursor-pointer" onClick={handleNext}> */}
-                    <CarouselNext />
-                    {/* </div> */}
-                </Carousel>
+                </div>
 
                 <div className="flex justify-center mt-10">
                     <Link

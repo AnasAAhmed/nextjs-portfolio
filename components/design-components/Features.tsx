@@ -79,6 +79,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
       id="features"
     >
       <Heading
+      gap={16}
         title="What i have learned by making these complex real-world apps"
         text="From eCommerce to AI tools and social platforms, each project sharpened my skills in performance, SEO, UX, and scalability."
       />

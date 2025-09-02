@@ -5,7 +5,7 @@ import Heading from "@/components/design-components/Heading";
 import Projects from "@/components/design-components/Projects";
 import Testimonial from "@/components/design-components/Testimonial";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import SplitText from "@/components/ui/split-text";
+import { SplitText2 } from "@/components/ui/split-text-ssr";
 import { Timeline } from "@/components/ui/timeline";
 import { projects } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -57,15 +57,23 @@ function Page() {
                 <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
             </div>
             <div className="flex flex-col items-center space-ys-3 py-10 md:py-20 text-center">
-                <h1 className="sr-only relative mb-4 z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl not-light:text-slate-300">
-                    Hi I am Anas Ahmed <br /> A Full Stack Developer
-                </h1>
+                {/* <h1 className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold text-slate-700 md:text-5xl lg:text-7xl not-light:text-slate-300"> */}
+                    <SplitText2
+                        text="Hi I am Anas Ahmed A Full Stack Developer"
+                        mode="words"
+                        className="relative z-10 mx-auto max-w-4xl text-center text-3xl font-bold text-slate-700 md:text-5xl lg:text-7xl not-light:text-slate-300"
+                        itemClassName="mx-[1px]"         
+                        delayPerItem={0.03}
+                        duration={0.3}
+                        y={12}
+                    />
+                {/* </h1> */}
                 <UiHero />
             </div>
             <FeaturesSectionDemo />
             <TimelineDemo />
             <FeaturedProjects crosses={false} />
-            <Projects crosses={false} data={projects} />
+            <Projects crosses={false} data={projects.slice(10, 16)} />
             <GlowingEffectDemo />
             <Testimonial isCrosses={false} />
         </div>

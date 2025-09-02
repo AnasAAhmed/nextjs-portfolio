@@ -66,7 +66,7 @@ export const BackgroundCircles = ({ parallaxRef }: { parallaxRef?: any }) => {
     }
   }, []);
   return (
-    <div className="absolute -z-30 -top-[32rem] sm:-top-[38.5rem] md:-top-[42.375rem] left-1/2 w-[46rem] md:w-[68rem] sm:w-[58rem] aspect-square bordser border-n-2/5 rounded-full -translate-x-1/2 xl:-top-[35rem]">
+    <div className="absolute -z-30 -top-[32rem] sm:-top-[38.5rem] md:-top-[42.375rem] left-1/2 w-[46rem] md:w-[68rem] sm:w-[58rem] aspect-square bordser border-n-2/5 rounded-full -translate-x-1/2 xl:-top-[37rem]">
       {/* MovingLines Svg */}
 
       <MovingLines

@@ -84,6 +84,7 @@ html.light {
   }
 }
 
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
   /* background-image: linear-gradient(-90deg, #10092e 0%, #3a0b0d 47%, #071a24 30%); */
@@ -93,9 +94,6 @@ html.light {
   scrollbar-width: none;
 }
 
-.conic-gradient {
-  background-color: conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)
-}
 
 :root {
   scroll-behavior: smooth;
@@ -140,5 +138,75 @@ html.light {
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* for ssr html animations */
+@keyframes splitFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--y, 12px));
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.split-text-item {
+  opacity: 0;
+  animation-name: splitFadeUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.p-fade {
+  opacity: 0;
+  animation-name: fade;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0.5s;
+  will-change: opacity, transform;
+
+}
+
+.btns-fade {
+  opacity: 0;
+  animation-name: fade;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  will-change: opacity, transform;
+
+  animation-delay: 0.7s;
+}
+
+.hero-img-fadeUp {
+  opacity: 0;
+  will-change: opacity, transform;
+  animation-name: splitFadeUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay:0.9s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split-text-item {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

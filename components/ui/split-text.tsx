@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 
 interface SplitTextProps {
   text: string;
-  mode?:  "words" | "chars";          // "words" | "chars"
+  mode?: "words" | "chars";          // "words" | "chars"
   className?: string;        // wrapper styles
   itemClassName?: string;    // each word/char styles
-  once?: boolean;            // animate only once
+  once?: boolean;    // animate only once
+  useWhileInView?: boolean;       // play only when in viewport 
   amount?: number;           // viewport amount
   duration?: number;
   delayPerItem?: number;     // stagger
@@ -20,6 +21,7 @@ export default function SplitText({
   className = "",
   itemClassName = "",
   once = false,
+  useWhileInView = true,
   amount = 0.3,
   duration = 0.3,
   delayPerItem = 0.04,
@@ -49,18 +51,25 @@ export default function SplitText({
             key={i}
             className={`inline-block will-change-transform ${itemClassName}`}
             initial={{ y, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once, amount }}
+            style={{
+                filter: true ? "blur(5px)" : "none",
+              }}
+            {...(useWhileInView ?
+              {
+                whileInView: { y: 0, opacity: 1 ,filter: true ? "blur(0px)" : "none", },
+                viewport: { once, amount }
+              } : {
+                animate: { y: 0, opacity: 1,filter: true ? "blur(0px)" : "none", }
+              }
+
+            )}
             transition={{
               duration,
               ease: "easeOut",
               delay: i * delayPerItem,
             }}
           >
-            {/* optional mask for a crisper "reveal" */}
-            <span className="inline-bloack overflow-hidden align-baseline">
               <span className="inline-block">{piece}</span>
-            </span>
           </motion.span>
         );
       })}

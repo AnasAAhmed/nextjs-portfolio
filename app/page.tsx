@@ -12,25 +12,24 @@ export const dynamic = 'force-static';
 
 
 export default async function Home() {
-//   const fetchLinkPreview = async (urls:string[]) => {
-//   const res = await fetch(`https://anasahmed-potfolio.vercel.app/api/link-preview`, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       "Project-Urls": JSON.stringify(urls),
-//     },
-//   });
-//   return res.json();
-// };
+  // const fetchLinkPreview = async (urls:string[]) => {
+  // const res = await fetch(`https://anasahmed-portfolio.vercel.app/api/link-preview`, {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //     "Project-Urls": JSON.stringify(urls),
+  //   },
+  // });
+  // return res.json();
+  // };
 
 // const [data, data2] = await Promise.all([
 //   fetchLinkPreview([
-//     "https://ecom-store-anas.vercel.app",
-//     "https://conwrite-ai.vercel.app",
-//     "https://anas-social.vercel.app",
-//     "https://imagerator-ai.vercel.app/",
-//   ]),
-//   fetchLinkPreview([
+    // "https://conwrite-ai.vercel.app",
+    // "https://anas-social.vercel.app",
+    // "https://imagerator-ai.vercel.app/",
+  // ]),
+  // fetchLinkPreview([
 //     "https://www.linkedin.com/posts/anas-ahmed-37258b319_nextjs-authjs-nextauth-activity-7319048537294487553-fIan?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
 //     "https://www.linkedin.com/posts/anas-ahmed-37258b319_throwback-react-sanity-activity-7312101509847035905-Q5GU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
 //     "https://www.linkedin.com/posts/anas-ahmed-37258b319_nextjs-react-saas-activity-7358076420692013056-FWCd",
@@ -44,7 +43,7 @@ export default async function Home() {
       <Hero />
       <Services />
       <Skills />
-      <Projects data={projects.slice(0,4)} />
+      <Projects data={projects.slice(0,6)} />
       <TimelineSection />
       <FeaturedProjects />
       <Posts data2={posts}/>

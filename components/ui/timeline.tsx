@@ -49,7 +49,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             key={index}
             className="flex justify-start pt-10 lg:pt-40 md:gap-10"
           >
-            <div className="sticky flex flex-col md:flex-row z-20 items-center top-40 self-start max-w-xs md:w-slg">
+            <div className="sticky flex flex-col md:flex-row z-20 items-center top-40 self-start xl:min-w-xs md:w-slg">
               <div className="h-10 absolute -left-[18px] lg:left-[14px] w-10 rounded-full bg-white not-light:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 not-light:bg-neutral-800 border border-neutral-300 not-light:border-neutral-700 p-2" />
               </div>
