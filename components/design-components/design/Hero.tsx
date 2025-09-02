@@ -7,7 +7,7 @@ import { heroIcons } from "@/lib/constants";
 import MovingLines from "@/assets/svg/MovingLines";
 
 
-export const Gradient = () => {
+export const ImaheBtm = () => {
   return (
     <>
       <div className="relative bg-slate-800 z-1 h-6 mx-2.5 bg-n-11 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-8" />
@@ -32,9 +32,9 @@ export const Parallax = () => {
   const parallaxRef = useRef(null);
 
   return (
-    <div ref={parallaxRef} className="max-md:hidden">
+    <div ref={parallaxRef} className="max-sm:hidden scale-75 lg:scale-100">
       < ScrollParallax isAbsolutelyPositioned >
-        <ul className="absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-foreground/50 rounded-2xl flex">
+        <ul className="absolute -left-[10rem] sm:-left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-foreground/50 rounded-2xl flex">
           {heroIcons.map((icon, index) => (
             <li title={icon} className="p-5" key={index}>
               <img src={icon} width={24} height={25} alt={icon} />
@@ -45,7 +45,7 @@ export const Parallax = () => {
 
       <ScrollParallax isAbsolutelyPositioned>
         <Notification
-          className="absolute border border-foreground/50 -right-[5.5rem] bottom-[11rem] w-[18rem] flex"
+          className="absolute border border-foreground/50 -right-[10rem] sm:-right-[5.5rem] bottom-[11rem] w-[18rem] flex"
           title="30+ projects"
         />
       </ScrollParallax>
@@ -70,7 +70,7 @@ export const BackgroundCircles = ({ parallaxRef }: { parallaxRef?: any }) => {
       {/* MovingLines Svg */}
 
       <MovingLines
-        className="absolute w-[46rem] md:w-[68rem] sm:w-[48rem] top-1/2 left-1/2 w-s[ss65.875rem] aspect-square borsder bsorder-n-2/10 rousnded-full -translate-x-1/2 -translate-y-1/2"
+        className="absolute w-[46rem] mxax-md:hidden md:w-[68rem] sm:w-[48rem] top-1/2 left-1/2 w-s[ss65.875rem] aspect-square borsder bsorder-n-2/10 rousnded-full -translate-x-1/2 -translate-y-1/2"
       />
 
       {/* Moving background colored circle balls */}

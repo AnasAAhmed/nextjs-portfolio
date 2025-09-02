@@ -15,17 +15,10 @@ const SkillsCircle = ({ skills }: { skills: SkillsInfo }) => {
     return (
         <ul>
             {skills.map((app, index) => (
-                <motion.li
+                <li
                     key={app.id}
                     className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
-                    initial={{ rotate: 0 }}
-                    whileInView={{ rotate: index * 22.5 }}
-                    viewport={{ once: true, amount: 0.3 }} // trigger only once when 30% visible
-                    transition={{
-                        duration: 0.6,
-                        ease: "easeOut",
-                        delay: (skills.length - 1 - index) * 0.05,
-                    }}
+                    style={{rotate:`${index * 22.5}deg`}}
                 >
                     <motion.div
                         title={app.title}
@@ -38,6 +31,8 @@ const SkillsCircle = ({ skills }: { skills: SkillsInfo }) => {
                             ease: "easeOut",
                             delay: (skills.length - 1 - index) * 0.05,
                         }}
+                    // style={{rotate:`${-(index * 22.5)}deg`}}
+
                     >
                         <Image
                             className="m-auto"
@@ -47,7 +42,7 @@ const SkillsCircle = ({ skills }: { skills: SkillsInfo }) => {
                             src={app.icon}
                         />
                     </motion.div>
-                </motion.li>
+                </li>
             ))}
         </ul>
     )

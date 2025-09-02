@@ -65,15 +65,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative pl-3 pzr-4 lg:pl-4 w-full">
-              <SplitText
-                text={item.title}
-                mode="chars"
-                className="lg:hidden pl-10 block text-2xl mb-4 text-left font-bold text-neutral-500 not-light:text-neutral-500"
-                // itemClassName="mx-[1px]"
-                delayPerItem={0.03}
-                duration={0.3}
-                y={12}
-              />
+              <h6 className="lg:hidden pl-10 block text-2xl mb-4 text-left font-bold text-neutral-500 not-light:text-neutral-500"
+              >
+                {item.title}
+              </h6>
               {item.content}{" "}
             </div>
           </div>

@@ -1,9 +1,8 @@
 
 import Button from "./Button";
 import Section from "./Section";
-import { BackgroundCircles, BottomLine, Gradient, Parallax } from "./design/Hero";
+import { BackgroundCircles, BottomLine, ImaheBtm, Parallax } from "./design/Hero";
 import Image from "next/image";
-import SplitText from "../ui/split-text";
 import { SplitText2 } from "../ui/split-text-ssr";
 
 const Hero = () => {
@@ -29,7 +28,6 @@ const Hero = () => {
             text="A Full Stack Developer"
             mode="words"
             className="text-xl font-semibold md:text-2xl lg:text-4xl mb-3 sm:mb-6"
-            itemClassName="mx-[1px]"           
             delayPerItem={0.07}
             duration={0.3}
             y={12}
@@ -37,9 +35,8 @@ const Hero = () => {
           <SplitText2
             text=" I craft responsive, high-performance web applications using Next.js, React.js, and Node.js. Currently expanding my expertise in Agentic AI and Web 3.0."
             mode="words"
-            className="max-w-4xl font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px] "
-            itemClassName="mx-[1px]"          
-            delayPerItem={0.02}           
+            className="max-w-4xl font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px]"
+            delayPerItem={0.02}
             duration={0.2}
             y={7}
           />
@@ -56,18 +53,18 @@ const Hero = () => {
             <div className="relative bg-[#19142b] rounded-[1rem]">
               <div className="rounded-[0.9rem] overflow-hidden">
                 <Image
-                   src="/code.webp"
+                  src="/code.webp"
                   className="w-full aspect-[4/3] sm:aspect-[16/9] object-cover"
                   width={1224}
                   height={890}
                   loading="eager"
                   alt="AI"
                 />
-                <Parallax />
               </div>
             </div>
+            <Parallax />
 
-            <Gradient />
+            <ImaheBtm />
           </div>
           {/* <div className="light:hidden absolute -z-50 -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <Image
