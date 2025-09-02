@@ -98,11 +98,11 @@ const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectTy
 
                 <div className="flex justify-center mt-10">
                     <Link
-                        className="text-xs font-code font-bold tracking-wider uppercase border-b"
+                        className="text-lg font-code font-bold tracking-wider uppercase border-white border-b-2"
                         href="/projects"
                         prefetch
                     >
-                        See all projects
+                        See all (19) projects
                     </Link>
                 </div>
             </div>
