@@ -142,12 +142,12 @@ html.light {
 }
 
 /* for ssr html animations */
-@keyframes splitFadeUp {
+@keyframes fadeUp {
   0% {
     opacity: 0;
     transform: translateY(var(--y, 12px));
-    filter: blur(5px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -157,7 +157,7 @@ html.light {
 
 .split-text-item {
   opacity: 0;
-  animation-name: splitFadeUp;
+  animation-name: fadeUp;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
@@ -166,11 +166,32 @@ html.light {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
+.h1-fade {
+  opacity: 0;
+  animation-name: fadeUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+  will-change: opacity, transform;
+
+}
+.h2-fade {
+  opacity: 0;
+  animation-name: fadeUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+  will-change: opacity, transform;
+
+}
 .p-fade {
   opacity: 0;
   animation-name: fade;
@@ -196,11 +217,11 @@ html.light {
 .hero-img-fadeUp {
   opacity: 0;
   will-change: opacity, transform;
-  animation-name: splitFadeUp;
+  animation-name: fadeUp;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
   animation-duration: 0.3s;
-  animation-delay:0.9s;
+  animation-delay: 0.9s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -208,5 +229,15 @@ html.light {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+}
+
+.responsive-filter {
+  filter: blur(5px);
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-filter {
+    filter: blur(0px);
   }
 }

@@ -32,7 +32,7 @@ export const Parallax = () => {
   const parallaxRef = useRef(null);
 
   return (
-    <div ref={parallaxRef} className="max-sm:hidden scale-75 lg:scale-100">
+    <div ref={parallaxRef} className="masx-sm:hidden scale-75 lg:scale-100">
       < ScrollParallax isAbsolutelyPositioned >
         <ul className="absolute -left-[10rem] sm:-left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-foreground/50 rounded-2xl flex">
           {heroIcons.map((icon, index) => (
@@ -70,7 +70,7 @@ export const BackgroundCircles = ({ parallaxRef }: { parallaxRef?: any }) => {
       {/* MovingLines Svg */}
 
       <MovingLines
-        className="absolute w-[46rem] mxax-md:hidden md:w-[68rem] sm:w-[48rem] top-1/2 left-1/2 w-s[ss65.875rem] aspect-square borsder bsorder-n-2/10 rousnded-full -translate-x-1/2 -translate-y-1/2"
+        className="absolute w-[46rem] max-ssm:hidden md:w-[68rem] sm:w-[48rem] top-1/2 left-1/2 w-s[ss65.875rem] aspect-square borsder bsorder-n-2/10 rousnded-full -translate-x-1/2 -translate-y-1/2"
       />
 
       {/* Moving background colored circle balls */}

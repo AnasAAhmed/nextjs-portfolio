@@ -6,7 +6,6 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 import Image from "next/image";
 import Heading from "./Heading";
 import SplitText from "../ui/split-text";
-import SkillsCircle from "./design/SkillsCircle";
 import { GradientLightLeft } from "./design/Benefits";
 
 const Skills = () => {
@@ -67,8 +66,30 @@ const Skills = () => {
 
             </div>
             <GradientLightLeft />
-            <SkillsCircle skills={skills} />
+            <ul>
+              {skills.map((app, index) => (
+                <li
+                  key={app.id}
+                  className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
+                  style={{ rotate: `${index * 22.5}deg` }}
+                >
+                  <div
+                    title={app.title}
+                    className="relative cursor-pointer -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl"
+                    style={{ rotate: `${-(index * 22.5)}deg` }}
 
+                  >
+                    <Image
+                      className="m-auto"
+                      width={app.width}
+                      height={app.height}
+                      alt={app.title}
+                      src={app.icon}
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
             <LeftCurve />
             <RightCurve />
           </div>

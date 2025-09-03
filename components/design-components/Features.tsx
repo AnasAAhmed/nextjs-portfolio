@@ -1,9 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { feturedProjects, projectHighlights } from "@/lib/constants";
-import { StickyScroll } from "../ui/sticky-scroll";
 import { WobbleCard } from "../ui/wobble-card";
-import SplitText from "../ui/split-text";
 
 
 const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
@@ -79,7 +77,8 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
       id="features"
     >
       <Heading
-      gap={16}
+        gap={16}
+        hclassName="max-lg:mt-10 text-3xl font-normal fonts-semibold md:text-4xl lg:text-5xl"
         title="What i have learned by making these complex real-world apps"
         text="From eCommerce to AI tools and social platforms, each project sharpened my skills in performance, SEO, UX, and scalability."
       />
@@ -88,7 +87,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
       <div className="grid mb-10 md:mb-5 xl:mb-0 text-white/80 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <WobbleCard
           containerClassName="bg-pink-800 sm:col-span-2 lg:col-span-2 relative overflow-visible"
-          className="relative flex flex-col justify-between h-full p-8"
+          className="relative flex flex-col justify-between h-full p-s8"
         >
           <div className="flex-1 flex flex-col justify-center">
             <h6 className="text-lg sm:text-2xl font-bold mb-4 max-w-lg">{projects[0].title}</h6>

@@ -49,10 +49,10 @@ export default function SplitText({
         return (
           <motion.span
             key={i}
-            className={`inline-block will-change-transform ${itemClassName}`}
+            className={`responsive-filter inline-block will-change-transform ${itemClassName}`}
             initial={{ y, opacity: 0 }}
             style={{
-                filter: true ? "blur(5px)" : "none",
+                // filter: true ? "blur(5px)" : "none",
               }}
             {...(useWhileInView ?
               {

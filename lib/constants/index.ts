@@ -4,7 +4,7 @@ export const navigation = [
     title: "Home",
     inNewTab:false,
     prefetch:false,
-    url: "/",
+    url: "/#hero",
     onlyMobile: false
   },
   {

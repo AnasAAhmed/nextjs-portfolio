@@ -95,7 +95,7 @@ const Posts = ({ data2 }: { data2: PostType }) => {
                     <CarouselNext />
                     {/* </div> */}
                 </Carousel>
-                 <div className="flex justify-center mt-10">
+                 <div className="flex justify-center">
                     <Link
                         className="text-lg font-code font-bold tracking-wider uppercase border-white border-b-2"
                         href="https://www.linkedin.com/in/anas-ahmed-37258b319"

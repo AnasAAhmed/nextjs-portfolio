@@ -96,7 +96,7 @@ const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectTy
 
                 </div>
 
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center">
                     <Link
                         className="text-lg font-code font-bold tracking-wider uppercase border-white border-b-2"
                         href="/projects"
