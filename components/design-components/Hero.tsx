@@ -17,7 +17,7 @@ const Hero = () => {
       id="hero"
     >
       <div className="container pb-10 mt-1 sm:mt-20 md:mt-30 relative " >
-        <div className="relative z-1 max-w-[76rem] mx-auto text-center mb-[4rem] ">
+        <div className="relative z-1 max-w-[76rem] mx-auto text-center mb-8  ">
           <h1 className="h1-fade text-4xl font-semibold md:texts-4xl lg:text-7xl mbf-6">
             Hi, <br /> i am
             <span className="bg-clip-text bg-gradient-to-tl from-blue-400 to-violet-600  text-transparent">
@@ -32,7 +32,7 @@ const Hero = () => {
             text="A Full Stack Developer"
             mode="words"
             className="text-xl max-sm:hidden font-semibold md:text-2xl lg:text-4xl mb-3 sm:mb-6"
-            delayPerItem={0.07}
+            delayPerItem={0.05}
             duration={0.3}
             y={12}
           />
@@ -40,7 +40,7 @@ const Hero = () => {
           <p className="p-fade md:hdidden max-w-4xl font-normal mx-auto mb-6 text-sm md:text-lg lg:text-[21px]">
             I craft responsive, high-performance web applications using Next.js, React.js, and Node.js. Currently expanding my expertise in Agentic AI and Web 3.0.
           </p>
-          <br />
+          {/* <br /> */}
           <Button className="mr-3 btns-fade" white title="Dont need to download, Just View in a tab" inNewTab href="/anas-ahmed-resume.pdf" >
             View Resume
           </Button>

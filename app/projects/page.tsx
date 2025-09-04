@@ -61,16 +61,20 @@ const page = async ({ searchParams }: { searchParams: Promise<{ category: string
             key={index}
             className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
           >
-            <div
-              className={`relatsive w-full sm:aspect-[6/4] ssm:h-[1s65px] md:h-s[275px] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden`}
-            >
-              <img
-                src={proj.image}
-                alt={proj.title}
-                title={proj.description}
-                className="object-cover w-full h-full"
-              />
-            </div>
+           <div
+                                className="relative w-full sm:aspect-[6/4] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden"
+                            >
+                                <div
+                                    className="absolute inset-0 bg-center bg-cover scale-110 blur-lg"
+                                    style={{ backgroundImage: `url(${proj.image})` }}
+                                />
+                                <img
+                                    src={proj.image}
+                                    alt={proj.title}
+                                    title={proj.description}
+                                    className="relative z-10 object-contain w-full h-full"
+                                />
+                            </div>
             <h3
               title={proj.title}
               className="text-sm 2xl:text-lg line-clamp-1 max-sw-80 font-medium mt-4 mx-auto"

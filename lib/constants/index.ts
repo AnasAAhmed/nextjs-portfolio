@@ -380,7 +380,7 @@ export const projects = [
   {
     "title": "Social Media App | Anas Ahmed",
     "description": "A full-stack social media made with Nextjs, Neon PostgreSQl, Typescript, Cloudinary, clerk, Prisma and SSR streaming logic",
-    "image": "https://i.ytimg.com/vi/aBjge1drw0c/maxresdefault.jpg",
+    "image": "/ff.png",
     "url": "https://anas-social.vercel.app",
     "category": "full-stack",
   },

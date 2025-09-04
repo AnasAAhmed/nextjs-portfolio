@@ -2,6 +2,8 @@ import Section from "./Section";
 import Heading from "./Heading";
 import { feturedProjects, projectHighlights } from "@/lib/constants";
 import { WobbleCard } from "../ui/wobble-card";
+import Link from "next/link";
+import SplitText from "../ui/split-text";
 
 
 const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
@@ -84,7 +86,7 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
       />
       <h1 className="sr-only">What i have learned by making these complex real-world apps</h1>
 
-      <div className="grid mb-10 md:mb-5 xl:mb-0 text-white/80 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid mb-6 md:mb-5 xl:mb-0 text-white/80 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <WobbleCard
           containerClassName="bg-pink-800 sm:col-span-2 lg:col-span-2 relative overflow-visible"
           className="relative flex flex-col justify-between h-full p-s8"
@@ -124,6 +126,18 @@ const FeaturedProjects = ({ crosses = true }: { crosses?: boolean; }) => {
         </WobbleCard>
       </div>
       {/* <StickyScroll content={stickyContent} /> */}
+      <div className="flex mt-6 justify-center">
+        <Link
+          className="text-lg font-code font-bold tracking-wider uppercase border-white border-b-2"
+          href="/projects"
+          prefetch
+        >
+          {/*  */}
+          <SplitText
+          text="See all (19) projects"
+          />
+        </Link>
+      </div>
     </Section>
 
   );

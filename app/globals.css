@@ -152,6 +152,7 @@ html.light {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+    scale: 1;
   }
 }
 
@@ -169,6 +170,7 @@ html.light {
 
   100% {
     opacity: 1;
+    scale: 1;
   }
 }
 
@@ -182,6 +184,7 @@ html.light {
   will-change: opacity, transform;
 
 }
+
 .h2-fade {
   opacity: 0;
   animation-name: fadeUp;
@@ -190,8 +193,10 @@ html.light {
   animation-duration: 0.3s;
   animation-delay: 0.3s;
   will-change: opacity, transform;
+  scale: 0.97;
 
 }
+
 .p-fade {
   opacity: 0;
   animation-name: fade;
@@ -210,12 +215,12 @@ html.light {
   animation-timing-function: ease-out;
   animation-duration: 0.3s;
   will-change: opacity, transform;
-
   animation-delay: 0.7s;
 }
 
 .hero-img-fadeUp {
   opacity: 0;
+  scale: 0.98;
   will-change: opacity, transform;
   animation-name: fadeUp;
   animation-fill-mode: forwards;

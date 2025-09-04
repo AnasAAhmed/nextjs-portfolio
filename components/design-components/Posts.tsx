@@ -4,6 +4,7 @@ import { Loader2 } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
 import Link from 'next/link';
 import Heading from './Heading';
+import SplitText from '../ui/split-text';
 
 export const extractUrl = (text: string) => {
     const urlRegex = /(https?:\/\/[^\s]+)/;
@@ -95,15 +96,17 @@ const Posts = ({ data2 }: { data2: PostType }) => {
                     <CarouselNext />
                     {/* </div> */}
                 </Carousel>
-                 <div className="flex justify-center">
+                <div className="flex justify-center">
                     <Link
                         className="text-lg font-code font-bold tracking-wider uppercase border-white border-b-2"
                         href="https://www.linkedin.com/in/anas-ahmed-37258b319"
                     >
-                        See all posts
+                        <SplitText
+                            text="See all posts"
+                        />
                     </Link>
                 </div>
-                       
+
             </div>
         </Section>
     )

@@ -8,12 +8,12 @@ import Heading from "./Heading";
 import SplitText from "../ui/split-text";
 import { GradientLightLeft } from "./design/Benefits";
 
-const Skills = () => {
+const Skills = ({ crosses = true }: { crosses?: boolean }) => {
   return (
-    <Section crosses id="skills" crossesOffset="lg:translate-y-[5.25rem]"
+    <Section crosses={crosses} id="skills" crossesOffset="lg:translatfe-y-[5.25rem]"
     >
       <div className="container lg:flex max-lg:pb-16 pt-16">
-        <div className="max-w-[28rem]">
+        <div style={{ maxWidth: crosses ? '448px' : '' }}>
           <Heading hPosition="start" title="My Tech Stack & Expertise" />
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {skillsContent.map((item) => (
@@ -80,7 +80,7 @@ const Skills = () => {
 
                   >
                     <Image
-                      className="m-auto"
+                      className="m-auto transition-transform duration-500 ease-in-out hover:rotate-45"
                       width={app.width}
                       height={app.height}
                       alt={app.title}
