@@ -2,15 +2,15 @@ export const navigation = [
   {
     id: "0",
     title: "Home",
-    inNewTab:false,
-    prefetch:false,
+    inNewTab: false,
+    prefetch: false,
     url: "/#hero",
     onlyMobile: false
   },
   {
     id: "1",
-    inNewTab:false,
-    prefetch:false,
+    inNewTab: false,
+    prefetch: false,
     title: "Services",
     url: "/#services",
     onlyMobile: false
@@ -18,33 +18,33 @@ export const navigation = [
   {
     id: "2",
     title: "Skills",
-    inNewTab:false,
-    prefetch:false,
+    inNewTab: false,
+    prefetch: false,
     url: "/#skills",
     onlyMobile: false
   },
   {
     id: "3",
     title: "Projects",
-    inNewTab:false,
+    inNewTab: false,
     url: "/#projects",
-    prefetch:false,
+    prefetch: false,
     onlyMobile: false
   },
   {
     id: "4",
     title: "Education",
-    inNewTab:false,
-    prefetch:false,
+    inNewTab: false,
+    prefetch: false,
     url: "/#timeline",
     onlyMobile: false
   },
   {
     id: "5",
     title: "Contact",
-    inNewTab:true,
-    prefetch:false,
-    url: "https://www.fiverr.com/users/anas_ahmed_24",
+    inNewTab: false,
+    prefetch: false,
+    url: "mailto:anasahmedd244@gmail.com",
     onlyMobile: false
   },
 ];
@@ -384,15 +384,15 @@ export const projects = [
     "url": "https://anas-social.vercel.app",
     "category": "full-stack",
   },
-   {
+  {
     "title": "Imaginify - AI-powered image editing in Nextjs",
     "description": "image-ai-toolkit: An advanced image editing app with AI-powered object removal, color modification, resolution enhancement, and image extension. Includes Cloudinary SDK for efficient image search and management. Built for seamless user experience.",
     "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/58cb5a18afaae92c5f06334617c32a5d-1755621301804/imagerator.png",
     "url": "https://imagerator-ai.vercel.app",
     "category": "full-stack-with-ai",
   },
- {
-     "title": 'Web Search Agent - Input & Output Guardrials Agent - Dynaic Instructions Agent',
+  {
+    "title": 'Web Search Agent - Input & Output Guardrials Agent - Dynaic Instructions Agent',
     "description": '🚀 Advancing in my AI learning path with GIAIC (Thursday Evening, guided by Sir Bilal Fareed)!\n' +
       '\n' +
       'This time I worked on Assignments 7–9, exploring some advanced concepts in AI agent development. I’ve shared images of my work below 📸\n' +
@@ -408,13 +408,13 @@ export const projects = [
     "category": "ai-agents-with-python",
   },
   {
-  "title": "13 Pages Full Stack Ecommerce Dashboard in Reactjs, OAuth, Optimize Aggregate DB Quries For Scalability",
-  "description": "Developed with Reactjs, OAuth, Recharts, Mongodb, Optimize Mongoose Aggregate DB Quries, (Login Required to visit to dashborad as a visitor).",
-  "image": "/dash2.png",
-  "url": "https://ecommerce-ahmed.vercel.app/",
-  "category": "full-stack-dashboard",
-},
-   {
+    "title": "13 Pages Full Stack Ecommerce Dashboard in Reactjs, OAuth, Optimize Aggregate DB Quries For Scalability",
+    "description": "Developed with Reactjs, OAuth, Recharts, Mongodb, Optimize Mongoose Aggregate DB Quries, (Login Required to visit to dashborad as a visitor).",
+    "image": "/dash2.png",
+    "url": "https://ecommerce-ahmed.vercel.app/",
+    "category": "full-stack-dashboard",
+  },
+  {
     "title": "3 AI Agents Weather Info Agent, Agent with Multiple Tools Smart, Customer Support Bot ",
     "description": "⚡ Continuing my AI journey with GIAIC (Thursday Evening, Sir Bibla Fareed’s class) I recently completed Assignments 4–6 and recorded a demo 🎥",
     "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE2xUUXUWlnZA/thumbnail-with-play-button-overlay-high/B4EZjWMkQxGwD0-/0/1755940289620?e=2147483647&v=beta&t=66GR_x5XEYsDFJREboVvLcfmhds3I9Nuv6rDYa2VejI",
@@ -465,11 +465,11 @@ export const projects = [
   },
   {
     "title": "Admin Dashboard(Different Instance) in Reactjs Powered Nextjs store backend",
-  "description": "An admin dashboard for managing the eCommerce store with single bacnkend and Auth sysytem for both store & Dashborad with two seperate frontends, built with Next.js. Includes store HomePage content & SEO customization, product, order, and user management with secure authentication and real-time updates.",
-  "image": "/dash.png",
-  "url": "https://ecom-admin-panel-xcw7-gh8p.vercel.app/",
-  "category": "full-stack-dashboard",
-},
+    "description": "An admin dashboard for managing the eCommerce store with single bacnkend and Auth sysytem for both store & Dashborad with two seperate frontends, built with Next.js. Includes store HomePage content & SEO customization, product, order, and user management with secure authentication and real-time updates.",
+    "image": "/dash.png",
+    "url": "https://ecom-admin-panel-xcw7-gh8p.vercel.app/",
+    "category": "full-stack-dashboard",
+  },
   {
     "title": "5+ pages Figma Design To Code in 24hrs for hackathon",
     "description": "This project is part of GIAIC hackathon Figma to Nextjs project in 24hrs we were given 5 pages figma design to convert it in 24 hrs with best practice this the the final project after implementing best rendering strategies of vercel CDN Caching dynamic products and thier SEO with mock Data Streaming rendering for long dynamic pages this is nit just the simple frontend project",
@@ -491,8 +491,8 @@ export const projects = [
     "url": "https://imagewrite-anas-giaic.streamlit.app",
     "category": "python-with-ai",
   },
-  
-  
+
+
   {
     "title": "More AI Agents Simple Agent(Chainlit & Python), Basic FAQ Agent, Math Function Tool Agent ",
     "description": "⏳ Sometimes deadlines push us to discover what we’re capable of. This week, I had to complete 6 assignments in a single day for GIAIC",

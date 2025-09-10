@@ -65,7 +65,7 @@ function Page() {
                     text="Hi I am Anas Ahmed A Full Stack Developer"
                     mode="words"
                     className="relative z-10 mx-auto max-w-5xl text-center text-3xl font-bold text-slate-700 md:text-5xl lg:text-7xl not-light:text-slate-300"
-                    itemClassName="mx-[1px]"
+                    // itemClassName="mx-[1px]"
                     delayPerItem={0.03}
                     duration={0.3}
                     y={12}
