@@ -1,12 +1,12 @@
 // 'use client'
 // import React, { useState } from 'react'
 import Section from './Section';
-import { ExternalLink, Loader2 } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
+import { ExternalLink } from 'lucide-react';
 
 import Link from 'next/link';
 import Heading from './Heading';
 import SplitText from '../ui/split-text';
+import PRojectCard from './design/project-card';
 
 export const extractUrl = (text: string) => {
     const urlRegex = /(https?:\/\/[^\s]+)/;
@@ -14,15 +14,16 @@ export const extractUrl = (text: string) => {
     return match ? match[0] : null;
 };
 
-type ProjectType = {
+export type ProjectType = {
     title: string;
     description: string;
     image: string;
+    videoUrl?: string;
     url: string;
     category: string;
-}[]
+}
 
-const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectType }) => {
+const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectType[] }) => {
     // const [currentIndex, setCurrentIndex] = useState(0);
 
     // const handleNext = () => {
@@ -49,54 +50,7 @@ const Projects = ({ crosses = true, data }: { crosses?: boolean; data: ProjectTy
                 />
                 <div className="container pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center mt-10 spasce-y-10 text-center">
                     {data.map((proj: any, index: number) => (
-                        <div
-                            key={index}
-                            className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
-                        >
-                            <div
-                                className="relative w-full sm:aspect-[6/4] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden"
-                            >
-                                <div
-                                    className="absolute inset-0 bg-center bg-cover scale-110 blur-2xl"
-                                    style={{ backgroundImage: `url(${proj.image})` }}
-                                />
-                                <img
-                                    src={proj.image}
-                                    alt={proj.title}
-                                    title={proj.description}
-                                    className="relative z-10 object-contain w-full h-full"
-                                />
-                            </div>
-
-                            <h3
-                                title={proj.title}
-                                className="text-sm 2xl:text-lg line-clamp-1 max-sw-80 font-medium mt-4 mx-auto"
-                            >
-                                {proj.title}
-                            </h3>
-                            <p
-                                title={proj.description}
-                                className="text-[12px] 2xl:text-[16px] text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
-                            >
-                                {proj.description}
-                            </p>
-                            <Link
-                                prefetch={false}
-                                href={'/projects?category=' + proj.category}
-                                title={"See all " + proj.category + ' Projects'}
-                                className="text-sm uppercase rounded-2xl bg-secondary border px-2 text-primary/70 line-clamp-2 cursor-pointer max-w-100 font-medium mb-4 mx-auto"
-                            >
-                                {proj.category.replace(/-/g, " ")}
-                            </Link>
-                            {
-                                proj.url &&
-                                <div className=' bg-[conic-gradient(from_225deg,#FFC876,#79FFF7,#9F53FF,#FF98E2,#FFC876)] p-[0.1rem] rounded-md'>
-                                    <Link target="_blank" className=' bg-primary-foreground px-2 py-1 flex rounded-md items-center gap-2' href={proj.url} title={proj.title + " Live Demo"} >
-                                        Live Demo <ExternalLink />
-                                    </Link>
-                                </div>
-                            }
-                        </div>
+                       <PRojectCard key={index} proj={proj} />
                     ))
                     }
 
