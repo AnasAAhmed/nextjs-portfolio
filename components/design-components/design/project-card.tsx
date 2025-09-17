@@ -11,7 +11,7 @@ const PRojectCard = ({ proj }: { proj: ProjectType }) => {
             className="transition-transform duration-300 w-full ease-in-out flex flex-col justify-center items-center"
         >
             <div
-                className="relative w-full sm:aspect-[6/4] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden"
+                className="relative w-full sm: aspect-[6/4] hover:shadow-xl z-10 mx-auto transition-all border duration-300 ease-in-out rounded-lg overflow-hidden"
             >
                 <div
                     className="absolute inset-0 bg-white bg-center bg-cover scale-110 blur-2xl"

@@ -434,6 +434,13 @@ export const projects = [
     "category": "full-stack-sanity-cms",
   },
   {
+    "title": "8+ figma designes into Landing Pages in Reactjs/Nextjs",
+    "description": "I developed brainwave landing pages in Reactjs/Nextjs with fast routing, pixel-perfect & attractive design for good UX/UI. Some of pages i designed & developed by myself and rest i convert it from figma design to code.",
+    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/3dcfaa4b84d014016990c3ec50c24ce3-1753463955854/Copy%20of%20Your%20paragraph%20text.png",
+    "url": "https://brainwave-anas.vercel.app/",
+    "category": "frontend-ui/ux",
+  },
+  {
     "title": "Figma clone with Fabric.js, Liveblocks",
     "description": "figma-clone: A collaborative design tool inspired by Figma, featuring Liveblocks for real-time editing, Fabric.js for canvas rendering, live mouse position tracking, real-time reactions, comments, and more for seamless teamwork.",
     "image": "https://i.ytimg.com/vi/oKIThIihv60/hqdefault.jpg",
@@ -453,13 +460,6 @@ export const projects = [
     "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE2xUUXUWlnZA/thumbnail-with-play-button-overlay-high/B4EZjWMkQxGwD0-/0/1755940289620?e=2147483647&v=beta&t=66GR_x5XEYsDFJREboVvLcfmhds3I9Nuv6rDYa2VejI",
     "url": "https://www.linkedin.com/posts/anas-ahmed-37258b319_ai-openai-python-activity-7364947402035712001-JQ_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFC1oEYBbFfhHzvy8I0urx2LZaJg4NK6_3E",
     "category": "ai-agents-with-python",
-  },
-  {
-    "title": "8+ figma designes into Landing Pages in Reactjs/Nextjs",
-    "description": "I developed brainwave landing pages in Reactjs/Nextjs with fast routing, pixel-perfect & attractive design for good UX/UI. Some of pages i designed & developed by myself and rest i convert it from figma design to code.",
-    "image": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/3dcfaa4b84d014016990c3ec50c24ce3-1753463955854/Copy%20of%20Your%20paragraph%20text.png",
-    "url": "https://brainwave-anas.vercel.app/",
-    "category": "frontend-ui/ux",
   },
 
   {
