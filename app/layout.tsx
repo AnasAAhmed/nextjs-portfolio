@@ -68,7 +68,7 @@ export const metadata: Metadata = {
         alt: "Project showcase preview",
       }
     ],
-    siteName: "Anas Ahmed | Portfolio",
+    siteName: "Anas Ahmed",
   },
 };
 
