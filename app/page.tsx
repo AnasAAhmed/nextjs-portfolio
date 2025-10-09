@@ -14,24 +14,22 @@ export const dynamic = 'force-static';
 export default async function Home() {
 
   const post_urls: string[] = JSON.parse(process.env.POST_URLS!);
-  const data :any= [];
+  // const data :any= [];
 
+  const fetchLinkPreview = async (urls: string[]) => {
+    const res = await fetch(`https://anasahmed-portfolio.vercel.app/api/link-preview`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Project-Urls": JSON.stringify(urls),
+      },
+    });
+    return res.json();
+  };
 
-
-  // const fetchLinkPreview = async (urls: string[]) => {
-  //   const res = await fetch(`https://anasahmed-portfolio.vercel.app/api/link-preview`, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "Project-Urls": JSON.stringify(urls),
-  //     },
-  //   });
-  //   return res.json();
-  // };
-
-  // const [data] = await Promise.all([
-  //   fetchLinkPreview(post_urls),
-  // ]);
+  const [data] = await Promise.all([
+    fetchLinkPreview(post_urls),
+  ]);
 
   return (
     <>
